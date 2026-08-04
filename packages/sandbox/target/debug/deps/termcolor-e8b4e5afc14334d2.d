@@ -1,7 +1,0 @@
-/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/termcolor-e8b4e5afc14334d2.d: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs
-
-/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/libtermcolor-e8b4e5afc14334d2.rlib: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs
-
-/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/libtermcolor-e8b4e5afc14334d2.rmeta: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs
-
-/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs:

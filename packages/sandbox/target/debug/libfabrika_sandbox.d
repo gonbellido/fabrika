@@ -1,1 +1,0 @@
-/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/libfabrika_sandbox.rlib: /Users/gbellido/Documents/Fabrika/packages/sandbox/src/capabilities.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/src/executor.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/src/lib.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/src/manifest.rs
