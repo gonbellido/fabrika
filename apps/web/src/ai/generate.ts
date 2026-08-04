@@ -1,39 +1,25 @@
 import type { ComponentDSL } from "@fabrika/dsl";
 
+const API_BASE = "http://localhost:3000/api";
+
 export async function generateComponent(
-  _prompt: string,
+  prompt: string,
   type: string = "ProductCard",
 ): Promise<ComponentDSL> {
-  await new Promise((r) => setTimeout(r, 600));
+  const res = await fetch(`${API_BASE}/ai/generate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prompt, type }),
+  });
 
-  return {
-    type,
-    version: "1.0.0",
-    schema: "https://fabrika.dev/schemas/component-v1",
-    label: type,
-    category: "ecommerce",
-    props: { theme: "light", showRating: true, buttonLabel: "Añadir al carrito" },
-    styles: { desktop: { maxWidth: "320px", borderRadius: "12px", padding: "16px" } },
-    bindings: {
-      title: "product.name",
-      image: "product.image",
-      price: "product.price",
-      rating: "product.rating",
-      reviewCount: "product.reviewCount",
-    },
-    actions: {
-      onClickAddToCart: {
-        capability: "cart.write",
-        params: { productId: "product.id", quantity: 1 },
-      },
-    },
-    permissions: ["catalog.read", "cart.write"],
-    children: [],
-    meta: {
-      author: "ai-builder",
-      source: "ai",
-      createdAt: new Date().toISOString(),
-      tags: ["product", "card"],
-    },
-  };
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({
+      message: `HTTP ${res.status}`,
+    }));
+    throw new Error(
+      (err as { message?: string }).message ?? "AI generation failed",
+    );
+  }
+
+  return (await res.json()) as ComponentDSL;
 }
