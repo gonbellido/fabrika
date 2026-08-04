@@ -4,8 +4,8 @@
 
 ## Resumen
 
-- Commits: 13 | Paquetes: 5 | CI: ✅ | DB: 6 tablas (Prisma + RLS)
-- Fase: Publishing engine completado. Siguiente: sandbox WASM, editor SPA
+- Commits: 16 | Paquetes: 7 (6 core + 1 app) | CI: ✅ | DB: 6 tablas
+- Fase: Core completo. Siguiente: Terraform, tests, docs
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
