@@ -1,0 +1,108 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tenant {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String
+  slug      String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  users  User[]
+  sites  Site[]
+  pages  Page[]
+  media  Media[]
+
+  @@map("tenants")
+}
+
+model User {
+  id         String   @id @default(uuid()) @db.Uuid
+  tenantId   String   @map("tenant_id") @db.Uuid
+  keycloakId String   @map("keycloak_id")
+  email      String
+  name       String?
+  role       String   @default("editor")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id])
+
+  @@unique([tenantId, email])
+  @@map("users")
+}
+
+model Site {
+  id       String @id @default(uuid()) @db.Uuid
+  tenantId String @map("tenant_id") @db.Uuid
+  name     String
+  domain   String?
+  settings Json   @default("{}")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id])
+  pages  Page[]
+
+  @@map("sites")
+}
+
+model Page {
+  id       String  @id @default(uuid()) @db.Uuid
+  siteId   String  @map("site_id") @db.Uuid
+  tenantId String  @map("tenant_id") @db.Uuid
+  title    String
+  slug     String
+  dsl      Json
+  state    String  @default("draft")
+  version  Int     @default(1)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  site     Site          @relation(fields: [siteId], references: [id], onDelete: Cascade)
+  tenant   Tenant        @relation(fields: [tenantId], references: [id])
+  versions PageVersion[]
+
+  @@unique([siteId, slug])
+  @@index([siteId])
+  @@index([tenantId])
+  @@map("pages")
+}
+
+model PageVersion {
+  id          String   @id @default(uuid()) @db.Uuid
+  pageId      String   @map("page_id") @db.Uuid
+  tenantId    String   @map("tenant_id") @db.Uuid
+  dsl         Json
+  version     Int
+  publishedAt DateTime @default(now()) @map("published_at")
+
+  page Page @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@index([pageId])
+  @@map("page_versions")
+}
+
+model Media {
+  id        String @id @default(uuid()) @db.Uuid
+  tenantId  String @map("tenant_id") @db.Uuid
+  filename  String
+  mimeType  String @map("mime_type")
+  sizeBytes BigInt @map("size_bytes")
+  url       String
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  tenant Tenant @relation(fields: [tenantId], references: [id])
+
+  @@map("media")
+}

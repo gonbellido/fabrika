@@ -1,0 +1,38 @@
+{
+  "name": "@fabrika/core-api",
+  "version": "1.0.0",
+  "description": "Fabrika Core API — NestJS backend for tenants, sites, pages, capabilities",
+  "private": true,
+  "scripts": {
+    "build": "nest build",
+    "typecheck": "tsc --noEmit",
+    "dev": "nest start --watch",
+    "start": "nest start",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@fabrika/capabilities": "workspace:*",
+    "@fabrika/dsl": "workspace:*",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/platform-express": "^11.0.1",
+    "@prisma/client": "^6.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "prisma": "^6.0.0",
+    "typescript": "^5.5.0"
+  }
+}
