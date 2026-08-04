@@ -4,8 +4,8 @@
 
 ## Resumen
 
-- Commits: 17 | Paquetes: 7 + Terraform | CI: ✅ | DB: 6 tablas
-- Fase: Infraestructura como código completada. Plataforma core lista para desarrollo.
+- Commits: 19 | Paquetes: 7 + Terraform | CI: ✅ | DB: 6 tablas + Prisma migrate
+- Fase: Plataforma verificada E2E. Docker + API + Editor arrancan correctamente.
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
