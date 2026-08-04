@@ -1,0 +1,14 @@
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/thiserror-19ea7ba40fc66ad0.d: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/lib.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/aserror.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/display.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/var.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/private.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/thiserror-e8b2ca36f1417ec0/out/private.rs
+
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/libthiserror-19ea7ba40fc66ad0.rlib: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/lib.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/aserror.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/display.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/var.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/private.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/thiserror-e8b2ca36f1417ec0/out/private.rs
+
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/libthiserror-19ea7ba40fc66ad0.rmeta: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/lib.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/aserror.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/display.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/var.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/private.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/thiserror-e8b2ca36f1417ec0/out/private.rs
+
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/lib.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/aserror.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/display.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/var.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.19/src/private.rs:
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/thiserror-e8b2ca36f1417ec0/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/thiserror-e8b2ca36f1417ec0/out

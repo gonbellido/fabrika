@@ -1,0 +1,14 @@
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/serde-6e3c2d87aa1beee5.d: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/serde-b1317e859f0bd89c/out/private.rs
+
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/libserde-6e3c2d87aa1beee5.rlib: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/serde-b1317e859f0bd89c/out/private.rs
+
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/deps/libserde-6e3c2d87aa1beee5.rmeta: /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/serde-b1317e859f0bd89c/out/private.rs
+
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs:
+/Users/gbellido/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs:
+/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/serde-b1317e859f0bd89c/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/gbellido/Documents/Fabrika/packages/sandbox/target/debug/build/serde-b1317e859f0bd89c/out

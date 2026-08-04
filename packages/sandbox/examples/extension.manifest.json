@@ -1,0 +1,13 @@
+{
+  "name": "reviews-widget",
+  "version": "0.1.0",
+  "runtime": "wasm",
+  "permissions": ["catalog.read"],
+  "limits": {
+    "cpu_ms": 50,
+    "memory_mb": 16,
+    "walltime_ms": 200,
+    "network": "none"
+  },
+  "signature": "sha256:abc123..."
+}
