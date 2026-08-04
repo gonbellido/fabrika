@@ -7,6 +7,7 @@ import { TenantsController } from "./tenants/tenants.controller";
 import { SitesController } from "./sites/sites.controller";
 import { PagesController } from "./pages/pages.controller";
 import { AiController } from "./ai/ai.controller";
+import { SandboxController } from "./sandbox/sandbox.controller";
 import { AuthModule } from "./auth/auth.module";
 import { OptionalKeycloakGuard } from "./auth/keycloak.guard";
 
@@ -17,6 +18,7 @@ import { OptionalKeycloakGuard } from "./auth/keycloak.guard";
     SitesController,
     PagesController,
     AiController,
+    SandboxController,
   ],
   providers: [
     PrismaService,
