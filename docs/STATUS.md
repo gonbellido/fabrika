@@ -3,9 +3,9 @@
 > Última actualización: 2026-08-04
 
 ## Resumen
-- Commits: 0 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
-- Fase: Investigación y definición del dominio
-- Documentos base: `CONTEXT.md` (glosario), dos documentos fundacionales
+- Commits: 3 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
+- Fase: Investigación completada. Siguiente: DSL + prototipo
+- Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
 - `plataforma_web_ia_segura_plan_tecnico (1).pdf` — plan técnico con stack, arquitectura, DSL, seguridad, planificación
