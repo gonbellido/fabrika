@@ -107,7 +107,11 @@ export const HeaderRenderer: FC<{ dsl: ComponentDSL }> = ({ dsl }) => {
       <span style={{ fontWeight: 700, fontSize: 18 }}>{String(p.logo ?? "Fabrika")}</span>
       <nav style={{ display: "flex", gap: 24 }}>
         {menuItems.map((item, i) => (
-          <a key={i} href={item.link} style={{ color: "white", textDecoration: "none", fontSize: 14 }}>
+          <a
+            key={i}
+            href={item.link}
+            style={{ color: "white", textDecoration: "none", fontSize: 14 }}
+          >
             {item.label}
           </a>
         ))}

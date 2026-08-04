@@ -5,6 +5,7 @@ El código se organiza en un monorepo con paquetes independientes por capa arqui
 ## Contexto
 
 La arquitectura de Fabrika tiene capas bien definidas (DSL, capabilities, editor, core API, gateway, publishing, sandbox, adapters, agents). Cada capa tiene:
+
 - Una responsabilidad clara
 - Un contrato de interfaz con las capas adyacentes
 - Posiblemente un runtime diferente (TypeScript para editor, Rust para sandbox)
@@ -38,6 +39,7 @@ fabrika/
 ```
 
 Características:
+
 - **pnpm workspaces** para gestión de dependencias
 - **Turborepo** para build/test/lint paralelo con caché
 - **Contratos como paquetes** (`@fabrika/dsl`, `@fabrika/capabilities`) que son dependencia de múltiples paquetes

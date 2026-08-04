@@ -1,6 +1,14 @@
 import { registerComponent } from "./registry";
 import { ProductCardRenderer } from "./ProductCard";
-import { SectionRenderer, HeadingRenderer, TextRenderer, ButtonRenderer, ImageRenderer, HeaderRenderer, FooterRenderer } from "./Section";
+import {
+  SectionRenderer,
+  HeadingRenderer,
+  TextRenderer,
+  ButtonRenderer,
+  ImageRenderer,
+  HeaderRenderer,
+  FooterRenderer,
+} from "./Section";
 
 export function initComponents() {
   registerComponent("ProductCard", ProductCardRenderer);

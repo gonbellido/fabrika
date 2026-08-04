@@ -7,6 +7,7 @@ Comparar objetivamente la experiencia de construir la misma página de producto 
 ## Escenario de prueba
 
 **Página a construir**: Landing de producto con:
+
 1. Hero section (imagen de fondo, título, subtítulo, CTA)
 2. Grid de 6 productos (imagen, nombre, precio, valoración, botón "añadir al carrito")
 3. Sección de features (3 columnas con icono, título, texto)
@@ -17,40 +18,40 @@ Comparar objetivamente la experiencia de construir la misma página de producto 
 
 ## Herramientas a evaluar
 
-| Herramienta | Plan | Precio mensual |
-|-------------|------|----------------|
-| Elementor (WordPress) | Pro | $59/año |
-| Webflow | CMS | $29/mes |
-| Wix Studio | Standard | $22/mes |
-| Framer | Pro | $25/mes |
+| Herramienta           | Plan     | Precio mensual |
+| --------------------- | -------- | -------------- |
+| Elementor (WordPress) | Pro      | $59/año        |
+| Webflow               | CMS      | $29/mes        |
+| Wix Studio            | Standard | $22/mes        |
+| Framer                | Pro      | $25/mes        |
 
 ## Métricas
 
 ### Durante la construcción
 
-| Métrica | Cómo medirla | Herramienta |
-|---------|-------------|-------------|
-| Tiempo hasta primer resultado visible | Cronómetro desde login hasta ver algo en pantalla | Manual |
-| Tiempo total de construcción | Cronómetro total de la tarea | Manual |
-| Número de pasos/clicks | Contar interacciones necesarias | Manual |
-| Errores encontrados | Registrar cada bloqueo, confusión o error | Manual |
-| Curva de aprendizaje | Notas cualitativas sobre fricción inicial | Manual |
-| Uso de templates predefinidos | ¿Ofrece templates? ¿Cuánto ayudan? | Manual |
-| Calidad del responsive out-of-the-box | Verificar en 3 breakpoints sin ajustes manuales | Manual |
+| Métrica                               | Cómo medirla                                      | Herramienta |
+| ------------------------------------- | ------------------------------------------------- | ----------- |
+| Tiempo hasta primer resultado visible | Cronómetro desde login hasta ver algo en pantalla | Manual      |
+| Tiempo total de construcción          | Cronómetro total de la tarea                      | Manual      |
+| Número de pasos/clicks                | Contar interacciones necesarias                   | Manual      |
+| Errores encontrados                   | Registrar cada bloqueo, confusión o error         | Manual      |
+| Curva de aprendizaje                  | Notas cualitativas sobre fricción inicial         | Manual      |
+| Uso de templates predefinidos         | ¿Ofrece templates? ¿Cuánto ayudan?                | Manual      |
+| Calidad del responsive out-of-the-box | Verificar en 3 breakpoints sin ajustes manuales   | Manual      |
 
 ### Resultado final
 
-| Métrica | Cómo medirla | Escala |
-|---------|-------------|--------|
-| Fidelidad visual al diseño objetivo | Comparación side-by-side | 1-5 |
-| Calidad responsive (desktop/tablet/mobile) | Verificar en 3 breakpoints | 1-5 |
-| Performance (Lighthouse score) | Lighthouse audit | 0-100 |
-| Peso de página (KB) | Browser devtools | KB |
-| HTML semántico | Inspeccionar estructura DOM | 1-5 |
-| Accesibilidad básica (contraste, headings) | Lighthouse + manual | 0-100 |
-| SEO metadata presente | Inspeccionar `<head>` | Sí/No |
-| ¿El resultado es portable/exportable? | Intentar exportar el sitio | Sí/No/Formato |
-| ¿Puedo editar después sin romper nada? | Modificar un componente y verificar | 1-5 |
+| Métrica                                    | Cómo medirla                        | Escala        |
+| ------------------------------------------ | ----------------------------------- | ------------- |
+| Fidelidad visual al diseño objetivo        | Comparación side-by-side            | 1-5           |
+| Calidad responsive (desktop/tablet/mobile) | Verificar en 3 breakpoints          | 1-5           |
+| Performance (Lighthouse score)             | Lighthouse audit                    | 0-100         |
+| Peso de página (KB)                        | Browser devtools                    | KB            |
+| HTML semántico                             | Inspeccionar estructura DOM         | 1-5           |
+| Accesibilidad básica (contraste, headings) | Lighthouse + manual                 | 0-100         |
+| SEO metadata presente                      | Inspeccionar `<head>`               | Sí/No         |
+| ¿El resultado es portable/exportable?      | Intentar exportar el sitio          | Sí/No/Formato |
+| ¿Puedo editar después sin romper nada?     | Modificar un componente y verificar | 1-5           |
 
 ## Metodología
 

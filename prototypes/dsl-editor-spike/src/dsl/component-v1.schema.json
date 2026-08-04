@@ -139,11 +139,7 @@
           "type": "object",
           "description": "Parámetros estáticos o bindings a campos del provider.",
           "additionalProperties": {
-            "oneOf": [
-              { "type": "string" },
-              { "type": "number" },
-              { "type": "boolean" }
-            ]
+            "oneOf": [{ "type": "string" }, { "type": "number" }, { "type": "boolean" }]
           }
         },
         "confirm": {

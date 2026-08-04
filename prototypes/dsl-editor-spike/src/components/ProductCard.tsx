@@ -12,7 +12,12 @@ export const ProductCardRenderer: FC<{ dsl: ComponentDSL }> = ({ dsl }) => {
       <img
         src={resolveBinding(b.image ?? b["product.images.0.url"] ?? "", dsl)}
         alt={resolveBinding(b.title ?? "", dsl)}
-        style={{ width: "100%", aspectRatio: imageRatio === "4:3" ? "4/3" : "1", objectFit: "cover", borderRadius: 8 }}
+        style={{
+          width: "100%",
+          aspectRatio: imageRatio === "4:3" ? "4/3" : "1",
+          objectFit: "cover",
+          borderRadius: 8,
+        }}
       />
       <h3 style={{ margin: 0, fontSize: 16 }}>{resolveBinding(b.title ?? "", dsl)}</h3>
       <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>

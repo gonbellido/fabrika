@@ -14,12 +14,14 @@
 **Producto/Compañía:** Webflow, Inc. (San Francisco, fundada 2013)
 
 **Target audience:**
+
 - Diseñadores visuales que quieren producir código limpio sin programar
 - Agencias y freelancers profesionales (su segmento principal)
 - Equipos de marketing en empresas mid-market
 - Enterprise con Webflow Enterprise (NYT, Ideo, Monday.com)
 
 **Pricing model:**
+
 - SaaS con tiers por site (no por tenant/org)
 - **Site Plans:** Starter (gratis, webflow.io, 2 páginas), Basic ($15/mes, dominio custom, 300 páginas), Premium ($25/mes, CMS, hasta 2.5TB bandwidth)
 - **Platform Plans:** Team ($2,500/mes, contrato anual), Enterprise (custom)
@@ -27,6 +29,7 @@
 - Pricing por sitio = caro para portfolios grandes de clientes
 
 **Key strengths:**
+
 - Mejor diseño visual del mercado: el Designer es el benchmark de editor WYSIWYG
 - Código HTML/CSS/JS exportable y limpio (sin basura de builders)
 - CMS integrado con API REST — no es solo páginas estáticas
@@ -39,6 +42,7 @@
 - Marketplace de templates + partners certificados
 
 **Key weaknesses/limitations:**
+
 - **Vendor lock-in severo:** No puedes migrar el CMS fácilmente. El código exportado es estático.
 - **Curva de aprendizaje ALTA:** No es para no-diseñadores. La jerga es técnica (divs, clases, CSS grid/flexbox). Un freelancer sin background de diseño tarda meses.
 - **Precios caros para agencias:** Cada site paga su plan. No hay modelo multi-tenant real. Un portfolio de 25 sitios de clientes sale carísimo.
@@ -50,6 +54,7 @@
 - **Quejas comunes:** cambios de pricing repentinos, límites de bandwidth estrictos, soporte lento en planes bajos
 
 **Data connectivity:**
+
 - CMS nativo (REST API + Content Delivery API con cache)
 - Webflow Cloud: SQLite (D1), Key-Value (KV), Object Storage (R2)
 - Code components: componentes programables que pueden llamar APIs externas
@@ -58,6 +63,7 @@
 - MCP server para conectar con agentes de IA externos
 
 **AI features:**
+
 - AI site builder: prompt → site completo
 - AI section designer: genera secciones usando el design system existente
 - AI code components: genera componentes programables
@@ -68,12 +74,14 @@
 - Sistema de créditos AI compartidos por workspace
 
 **Portability/lock-in:**
+
 - **Export de código HTML/CSS/JS:** posible pero solo exporta páginas estáticas. Pierdes CMS, interacciones, lógica.
 - **Sin migración de CMS:** No puedes exportar la estructura del CMS ni los datos fácilmente
 - **Webflow Cloud apps** te atan aún más a la plataforma
 - **Lock-in: ALTO (8/10)**
 
 **Plugin/extension ecosystem:**
+
 - Webflow Apps marketplace (Cloud apps)
 - Code components (JS)
 - REST APIs para extender
@@ -91,12 +99,14 @@
 **Producto/Compañía:** Elementor Ltd. (Israel, fundada 2016)
 
 **Target audience:**
+
 - Freelancers y pequeños estudios WordPress (su core audience)
 - Diseñadores sin conocimientos de código
 - Agencias medianas que construyen sobre WordPress
 - Empresas con sitios WordPress corporativos
 
 **Pricing model:**
+
 - Freemium: versión gratuita con 32 widgets + editor base
 - **Editor Pro plans:** Essential ($49/año, 1 site), Advanced Solo ($99/año, 1 site), Advanced ($149/año, 3 sites), Expert ($199/año, 25 sites), Agency ($299/año, 1000 sites)
 - **Elementor One (todo-en-uno):** One ($149/año, 1 site + 25K créditos AI), One Agency ($299/año, unlimited sites + 350K créditos AI)
@@ -104,6 +114,7 @@
 - Sin revenue share — pago anual fijo
 
 **Key strengths:**
+
 - **Mejor editor drag-and-drop del mercado WordPress:** UX pulida, previsualización en tiempo real, responsive editing
 - **85+ widgets Pro** cubren casi cualquier necesidad visual
 - Theme Builder: headers, footers, archives, single posts — diseño completo del tema sin código
@@ -118,6 +129,7 @@
 - 16M+ sitios activos — efectivamente el estándar de facto para WordPress builders
 
 **Key weaknesses/limitations:**
+
 - **Dependencia total de WordPress:** Si WP cambia (Gutenberg, Full Site Editing), Elementor tiene que adaptarse o morir
 - **Performance:** Sitios con Elementor tienden a ser más lentos (DOM pesado, CSS/JS inline, render blocking). LCP scores malos sin optimización adicional.
 - **Código generado de baja calidad:** Divs anidados infinitos, markup no semántico, HTML/CSS no portable
@@ -131,6 +143,7 @@
 - **Quejas comunes:** bugs frecuentes tras updates, soporte lento, accesibilidad pobre, mobile editing limitado
 
 **Data connectivity:**
+
 - Dynamic Tags: conexión a WordPress CPTs, custom fields (ACF, Pods, Toolset, Meta Box)
 - WooCommerce dynamic tags para ecommerce
 - APIs REST de WordPress accesibles para desarrolladores
@@ -139,6 +152,7 @@
 - Toda la conectividad pasa por el ecosistema WordPress — recursos limitados si no es WP
 
 **AI features:**
+
 - **AI Website Builder:** prompt → wireframe → diseño con IA
 - **AI Layout Builder:** genera secciones y páginas desde descripciones
 - **AI Code:** genera CSS personalizado, snippets JS
@@ -148,12 +162,14 @@
 - Accesibilidad: AI scanner + AI fixes automáticos con créditos
 
 **Portability/lock-in:**
+
 - **Lock-in ALTÍSIMO (9/10):** Todo el diseño está atado a Elementor shortcodes. Desactivar Elementor = perder todo el contenido formateado.
 - Puedes exportar contenido vía WordPress XML, pero pierdes TODO el diseño visual
 - Sin estándares abiertos — no es HTML/CSS portable
 - Ventaja parcial: estás en WordPress, así que el contenido (posts, CPTs) sí se puede migrar con herramientas WP estándar
 
 **Plugin/extension ecosystem:**
+
 - **Masivo:** 55K+ plugins WordPress + cientos de addons específicos para Elementor
 - Third-party builders (Crocoblock, Dynamic.ooo, Essential Addons, Ultimate Addons)
 - Marketplace de templates dentro de Elementor
@@ -170,12 +186,14 @@
 **Producto/Compañía:** WordPress Foundation + Automattic (WooCommerce es de Automattic)
 
 **Target audience:**
+
 - TODO el espectro: desde bloggers hasta enterprise (WP.com VIP)
 - Ecommerce con WooCommerce: SMBs, mid-market, y enterprise (vía agencias)
 - Freelancers y agencias como implementadores principales
 - El 43% de todos los sitios web usan WordPress — es la plataforma más usada del mundo
 
 **Pricing model:**
+
 - **WordPress core:** Gratis, open-source (GPLv2)
 - **WooCommerce:** Gratis, open-source
 - **Costos reales:** Hosting ($25-350/mes), dominio, SSL, temas/themes, extensions ($29-299/año c/u), mantenimiento, seguridad
@@ -185,6 +203,7 @@
 - TCO para tienda $300M/año: ~$5.2M/año (1.74% del revenue)
 
 **Key strengths:**
+
 - **Dueño de tus datos:** 100% portabilidad. Ni WordPress ni WooCommerce pueden desactivar tu tienda
 - **Sin revenue share:** Pagas hosting + extensions, no un % de tus ventas
 - **Personalización total:** PHP, JavaScript, APIs REST. Puedes customizar TODO — checkout, carrito, flujos de producto
@@ -198,6 +217,7 @@
 - Agencias especializadas abundan y son accesibles
 
 **Key weaknesses/limitations:**
+
 - **Complejidad de mantenimiento:** Tú eres responsable de updates, seguridad, backups, rendimiento, compatibilidad
 - **Performance requiere trabajo:** Un WooCommerce mal optimizado es lentísimo. Necesitas caching, CDN, optimización de queries.
 - **Seguridad es TU responsabilidad:** Plugins vulnerables, ataques de fuerza bruta, inyección SQL — todo depende de tu configuración
@@ -210,6 +230,7 @@
 - **Curva de aprendizaje fragmentada:** WordPress, PHP, WooCommerce, tu theme, tu builder, tus plugins... cada capa suma complejidad
 
 **Data connectivity:**
+
 - **REST API completa** para WordPress y WooCommerce
 - **WooCommerce REST API:** productos, órdenes, clientes, cupones, reports — todo accesible programáticamente
 - **Webhooks** para eventos de tienda
@@ -219,6 +240,7 @@
 - **Mayor flexibilidad de conectividad del mercado** — pero requiere desarrollo
 
 **AI features:**
+
 - **Sin IA nativa significativa:** WordPress core no tiene AI. WooCommerce no tiene AI assistant.
 - Plugins third-party existen (generadores de contenido, chatbots) pero son básicos comparados con la competencia
 - **Jetpack AI** (de Automattic): generación de texto básica dentro del editor — muy limitado
@@ -226,12 +248,14 @@
 - Gran debilidad frente a Webflow, Wix, Shopify, Framer
 
 **Portability/lock-in:**
+
 - **Lock-in: BAJO (2/10):** Tus datos son tuyos. Exportación .XML de WordPress, .CSV de WooCommerce. Migrable a cualquier hosting o plataforma.
 - El diseño visual depende del builder usado — si usas Elementor, estás atrapado en Elementor
 - **La menor dependencia de vendor de todo el mercado**
 - **Código abierto:** Puedes hacer fork, modificar, inspeccionar TODO
 
 **Plugin/extension ecosystem:**
+
 - **El más grande del mundo:** 55K+ plugins WordPress, 1,000+ extensions WooCommerce
 - **WooCommerce Marketplace oficial** curado por Automattic
 - **Posibilidad de desarrollar cualquier customización** en PHP/JS sin pedir permiso
@@ -247,6 +271,7 @@
 **Producto/Compañía:** Shopify Inc. (Canadá, fundada 2006)
 
 **Target audience:**
+
 - Emprendedores y SMBs que quieren vender online rápido
 - Marcas DTC (direct-to-consumer) de todos los tamaños
 - Mid-market con Shopify Advanced
@@ -254,6 +279,7 @@
 - Vendedores en AI chats (Shopify Agentic — nuevo)
 
 **Pricing model:**
+
 - SaaS con revenue share indirecto (via comisiones de pago)
 - **Planes:** Basic ($22/mes fact. anual), Grow ($62/mes), Advanced ($289/mes), Plus ($2,100+/mes)
 - **Comisiones por transacción** si no usas Shopify Payments: Basic 2%, Grow 1%, Advanced 0.6%, Plus 0.2%
@@ -263,6 +289,7 @@
 - Add-ons: Markets ($59/mes por mercado extra), apps del App Store (precios variables)
 
 **Key strengths:**
+
 - **Ecommerce más pulido del mercado:** Checkout optimizado (15% mejor conversión que competidores), gestión de inventario, órdenes, shipping
 - **Ecosistema de Apps masivo:** 8,000+ apps en Shopify App Store
 - **Sidekick (AI assistant):** Mejor AI assistant del sector commerce — responde preguntas, hace tareas, genera reportes
@@ -278,6 +305,7 @@
 - **Shopify.dev:** Documentación excelente para desarrolladores
 
 **Key weaknesses/limitations:**
+
 - **NO es un constructor visual de sitios web general:** Es una plataforma de ecommerce. No puedes hacer un sitio de portfolio, revista, o corporate de forma nativa.
 - **Limitaciones de personalización visual:** El editor de temas es limitado comparado con Webflow o Elementor. Necesitas apps third-party para diseño avanzado.
 - **Vendor lock-in significativo:** Shopify controla el checkout, los datos, la infraestructura. No puedes migrar fácilmente.
@@ -292,6 +320,7 @@
 - **Quejas comunes:** precios que suben frecuentemente, apps que encarecen el TCO, checkout custom limitado en planes bajos, soporte variable
 
 **Data connectivity:**
+
 - **REST + GraphQL Admin API** completa — acceso a productos, órdenes, clientes, inventario, analytics
 - **Storefront API** para headless y mobile apps
 - **Shopify Flow** para automatizaciones entre apps y datos
@@ -301,6 +330,7 @@
 - **Sin soporte nativo para bases de datos externas** — requiere apps o desarrollo custom
 
 **AI features:**
+
 - **Sidekick:** AI assistant para comerciantes (preguntas, tareas, reportes, configuración de tienda)
 - **AI website builder:** prompt → tienda online completa
 - **Shopify Magic:** generación de descripciones de producto, imágenes, emails, textos
@@ -310,12 +340,14 @@
 - **Líder indiscutible en AI para ecommerce** — ni Webflow, ni WooCommerce se acercan
 
 **Portability/lock-in:**
+
 - **Lock-in: ALTO (8/10):** Datos exportables vía CSV/API, pero pierdes TODA la lógica de negocio, diseño, flujos, automatizaciones. Migrar de Shopify es un proyecto de desarrollo costoso.
 - Los temas son Liquid (propietario) — no transferibles a otra plataforma
 - Checkout es propiedad de Shopify — no puedes llevártelo
 - Las apps del App Store solo funcionan en Shopify
 
 **Plugin/extension ecosystem:**
+
 - **App Store con 8,000+ apps** — el más grande después de WordPress
 - Apps para: marketing, shipping, accounting, loyalty, reviews, diseño, Dropshipping
 - **Shopify Functions** para extender el backend (Plus solamente)
@@ -332,12 +364,14 @@
 **Producto/Compañía:** Framer B.V. (Países Bajos, fundada 2013 — pivotó de prototyping a web builder en 2022)
 
 **Target audience:**
+
 - Diseñadores UI/UX que quieren publicar directamente sin desarrolladores
 - Startups y founders que necesitan landing pages de alta calidad visual
 - Agencias de diseño/branding
 - Freelancers de diseño (no necesariamente de desarrollo web)
 
 **Pricing model:**
+
 - **Free:** 500 créditos AI, dominio framer.com, 1GB bandwidth
 - **Basic:** $10/mes (dominio custom, 2 CMS collections, 50GB bandwidth)
 - **Pro:** $30/mes (10 CMS collections, 100GB bandwidth, staging, branching)
@@ -347,6 +381,7 @@
 - **Pre-emptive sobre Webflow:** Basic de Framer = más barato que Basic de Webflow ($10 vs $15)
 
 **Key strengths:**
+
 - **Diseño visual más avanzado del mercado:** Proviene de una herramienta de prototyping (como Figma). Animaciones, micro-interacciones, tipografía avanzada.
 - **Framer Agents:** El mejor sistema de agentes AI para diseño web — diseño, copy, assets, interacciones desde prompts
 - **External Agents (PREVIEW):** Posibilidad de conectar tus propios agentes (Claude, ChatGPT) para flujos de IA customizados
@@ -361,6 +396,7 @@
 - **Framer Academy** y recursos educativos gratuitos
 
 **Key weaknesses/limitations:**
+
 - **NO es para ecommerce:** Sin carrito, checkout, pagos, gestión de inventario. Cero capacidades de tienda.
 - **CMS pequeño:** 10 colecciones máx en Pro (40 con add-on). 40K items máx. Insuficiente para sitios de contenido grande.
 - **Sin lógica de negocio:** No puedes construir apps con workflows, reglas de negocio, o estados complejos. Es para sitios web, no para aplicaciones.
@@ -374,6 +410,7 @@
 - **Sin soporte nativo para apps web dinámicas** (Webflow Cloud está intentando eso, Framer no)
 
 **Data connectivity:**
+
 - **CMS nativo** con colecciones — solo accesible desde el editor visual
 - **Sin APIs REST públicas** para consumir o modificar contenido externamente
 - **External Agents (PREVIEW):** MCP-like para conectar herramientas de IA
@@ -382,6 +419,7 @@
 - **Muy débil en data connectivity** — es un builder visual, no una plataforma
 
 **AI features:**
+
 - **Framer Agents:** El más avanzado de la lista en diseño AI. Generación de páginas completas, secciones, copy, assets visuales.
 - **AI copy generation:** textos optimizados para diferentes tonos y audiencias
 - **AI localization:** traducción automática completa
@@ -391,12 +429,14 @@
 - **Enfoque diferente:** Framer usa AI para el diseño visual, no para business logic (porque no tiene)
 
 **Portability/lock-in:**
+
 - **Lock-in: MUY ALTO (9/10):** No puedes exportar a HTML/CSS/JS funcional. No hay APIs de exportación. Básicamente no hay forma real de migrar.
 - Diseño en formato propietario — solo funciona en Framer
 - Contenido del CMS no tiene exportación programática fácil
 - Si Framer cierra, tu sitio desaparece
 
 **Plugin/extension ecosystem:**
+
 - **Marketplace:** Templates, componentes, plugins — pequeño pero creciendo
 - **Sin apps de terceros** como Shopify App Store o WordPress Plugins
 - **External Agents** es la apuesta para extensibilidad vía IA — no plugins tradicionales
@@ -412,18 +452,21 @@
 **Producto/Compañía:** Wix.com Ltd. (Israel, fundada 2006)
 
 **Target audience:**
+
 - Agencias y freelancers que construyen sitios para clientes (su foco)
 - Diseñadores que quieren un builder visual potente
 - Desarrolladores que extienden con código (Velo dev platform)
 - Empresas medianas y Enterprise (Wix Enterprise)
 
 **Pricing model:**
+
 - **Wix (producto principal):** Free, Light ($17/mes), Core ($29/mes), Business ($39/mes), Business Elite ($159/mes)
 - **Wix Studio (agencias):** Incluido en ciertos planes o como add-on. Precios por sitio + gestión multi-cliente.
 - **Modelo más SaaS-classic:** pago por site + storage + features
 - **Enterprise:** precios custom según proyecto
 
 **Key strengths:**
+
 - **Multi-cloud hosting** — rendimiento y uptime superiores a WordPress promedio
 - **Velo dev platform:** JavaScript backend + APIs para desarrolladores
 - **Data platform + Compute platform** para sites con backend dinámico
@@ -439,6 +482,7 @@
 - **Pagos integrados** (Wix Payments) sin comisiones extra por usar otros procesadores
 
 **Key weaknesses/limitations:**
+
 - **Vendor lock-in total:** No puedes exportar tu sitio. Todo el diseño, lógica, datos — atrapado en Wix.
 - **Personalización visual inferior a Webflow/Framer:** El editor Wix es bueno pero no da el control pixel-perfect de Webflow o las animaciones de Framer.
 - **Marca "Wix" asociada a sitios amateur:** Problema de percepción en el segmento profesional. Wix Studio busca resolver esto pero el estigma persiste.
@@ -451,6 +495,7 @@
 - **Quejas comunes:** editor lento con sitios grandes, limitaciones de personalización en mobile, soporte técnico inconsistente
 
 **Data connectivity:**
+
 - **Velo (Corvid) dev platform:** JavaScript backend con APIs, manejo de datos, integraciones HTTP
 - **Data platform:** Base de datos integrada con Collections (similar a CMS pero más potente)
 - **Compute platform:** Ejecutar código backend sin gestionar servidores
@@ -462,6 +507,7 @@
 - **Sin adaptadores para fuentes externas (WooCommerce, Shopify, PostgreSQL):** Si quieres datos externos, necesitas código en Velo
 
 **AI features:**
+
 - **AI Website Builder:** Prompt → sitio completo con diseño y contenido
 - **Wix ADI (Artificial Design Intelligence):** Generación de diseño asistida
 - **AI tools para copy, imágenes, SEO**
@@ -470,11 +516,13 @@
 - **AI más enfocado a generación inicial** que a asistencia continua
 
 **Portability/lock-in:**
+
 - **Lock-in: TOTAL (10/10):** No hay forma alguna de exportar tu sitio de Wix. HTML, CSS, JS, datos — todo es propietario.
 - **Ni siquiera puedes migrar a WordPress** — tienes que reconstruir desde cero
 - **El lock-in más agresivo del mercado**
 
 **Plugin/extension ecosystem:**
+
 - **Wix App Market:** cientos de apps — mucho más pequeño que WordPress, Shopify, o Webflow
 - **Velo Packages:** npm packages para extender funcionalidad
 - **Wix Studio Marketplace** para templates y componentes premium
@@ -491,12 +539,14 @@
 **Producto/Compañía:** Bubble Group, Inc. (Nueva York, fundada 2012)
 
 **Target audience:**
+
 - Founders no-técnicos que quieren construir MVPs y startups
 - Product managers y diseñadores que necesitan prototipos funcionales
 - "Citizen developers" en empresas (apps internas)
 - No enfocado en agencias/freelancers de diseño web — enfocado en apps web
 
 **Pricing model:**
+
 - **Free:** desarrollo y testing, dominio bubbleapps.io
 - **Starter:** ~$29/mes (dominio custom, funcionalidades básicas)
 - **Growth:** ~$119/mes (más capacity, colaboración)
@@ -505,6 +555,7 @@
 - **Modelo basado en "workload units"** (capacidad de servidor) — se vuelve caro con apps complejas
 
 **Key strengths:**
+
 - **El mejor no-code app builder del mercado:** Lógica de negocio compleja, workflows, base de datos relacional, autenticación, roles — todo sin código.
 - **Base de datos integrada:** PostgreSQL-like con relaciones, queries, y triggers visuales
 - **Workflows visuales:** Lógica condicional, loops, API calls, estados — programación visual sin código
@@ -518,6 +569,7 @@
 - **Export de código posible (limitado):** Bubble ha experimentado con exportación
 
 **Key weaknesses/limitations:**
+
 - **NO es un constructor visual de sitios web:** Es un app builder. El diseño visual es mediocre comparado con Webflow, Framer, o Elementor.
 - **Curva de aprendizaje ALTÍSIMA para diseño web:** El paradigma de Bubble (workflows, estados, base de datos) es ajeno a un diseñador o freelancer web.
 - **Rendimiento impredecible:** Apps complejas se vuelven lentas. El "Bubble lag" es una queja común.
@@ -531,6 +583,7 @@
 - **Sin staging/production workflow real** en planes bajos
 
 **Data connectivity:**
+
 - **Base de datos integrada** con relaciones, queries, y lógica visual
 - **API Connector:** Conexión a cualquier API REST/GraphQL externa
 - **SQL Database Connector plugin** para conectar PostgreSQL/MySQL externos
@@ -540,17 +593,20 @@
 - **Pero todo está acoplado a Bubble** — no puedes separar backend de frontend
 
 **AI features:**
+
 - **Bubble AI (beta):** Generación de elementos de UI desde prompts
 - **AI para generación de workflows básicos**
 - **MUY por detrás** de Webflow, Shopify, Framer en AI features
 - Más enfocado en "construir la lógica tú mismo" que en "la IA construye por ti"
 
 **Portability/lock-in:**
+
 - **Lock-in: TOTAL (10/10):** No puedes exportar tu app. Todo (DB, workflows, UI, lógica, usuarios) vive exclusivamente en servidores de Bubble.
 - **No hay plan de exportación de código funcional** (experimentos abandonados)
 - **Si Bubble cierra, pierdes TODO**
 
 **Plugin/extension ecosystem:**
+
 - **Bubble Plugin Marketplace:** Cientos de plugins para auth, pagos, APIs externas, UI components
 - **API Connector** para cualquier servicio REST
 - **Comunidad de developers que construyen plugins**
@@ -595,6 +651,7 @@ WordPress + WooCommerce es el ecosistema que Fabrika busca reemplazar. Es el "in
 - **Oportunidad para Fabrika:** El dolor EXISTE. Todo freelancer de WordPress sufre con mantenimiento, seguridad, rendimiento, y conflictos de plugins. Si Fabrika ofrece "lo mejor de WordPress sin lo peor", tiene un mercado enorme.
 
 **Estrategia defensiva de Fabrika:**
+
 - Construir **adaptadores de migración** (WordPress → Fabrika, WooCommerce → Fabrika)
 - Enfatizar la **seguridad por defecto** y la **paz mental** (no más updates que rompen sitios)
 - Ofrecer **mejor rendimiento out-of-the-box** (cache, CDN, optimización de assets)
@@ -617,6 +674,7 @@ Webflow es el competidor más cercano en espíritu a Fabrika: plataforma visual 
 - **Oportunidad para Fabrika:** Webflow es demasiado caro y complejo para el freelancer típico. Fabrika puede ser "Webflow para el resto de nosotros" — más barato, más fácil, con ecommerce nativo.
 
 **Estrategia defensiva de Fabrika:**
+
 - **Ecommerce nativo como killer feature** vs Webflow (que requiere integraciones externas)
 - **Multi-tenancy real** para agencias (Webflow lo cobra carísimo)
 - **Precio por tenant, no por sitio** (modelo disruptivo vs Webflow)
@@ -640,6 +698,7 @@ Elementor es el estándar de facto para freelancers WordPress hoy. Es la experie
 - **Oportunidad para Fabrika:** El dolor de Elementor es real (performance, seguridad, bugs tras updates). Si Fabrika es "Elementor sin WordPress" con mejor rendimiento y seguridad, hay una propuesta clara.
 
 **Estrategia defensiva de Fabrika:**
+
 - **Migración de diseños:** Herramienta que convierta sitios Elementor → componentes Fabrika
 - **Paridad de widgets** con Elementor (85+ componentes en el lanzamiento)
 - **Mejor performance demostrable** (comparativas de Lighthouse vs Elementor)
@@ -662,6 +721,7 @@ Shopify compite con Fabrika SOLO en el segmento ecommerce. No compite en sitios 
 - **Oportunidad para Fabrika:** Combinar "web + ecommerce" en una sola plataforma con diseño visual superior al de Shopify. El cliente que necesita una web corporativa CON tienda — ese es el sweet spot de Fabrika.
 
 **Estrategia defensiva de Fabrika:**
+
 - **Ecommerce integrado pero no el foco único** — posicionar como "la plataforma que hace web Y ecommerce bien"
 - **Sin comisiones por transacción** (modelo de suscripción, no revenue share)
 - **Adaptadores a Shopify** para quienes ya tienen tienda allí (headless ecommerce con frontend en Fabrika)
@@ -684,6 +744,7 @@ Wix Studio apunta al mismo segmento que Fabrika (agencias y freelancers) pero lo
 - **Oportunidad para Fabrika:** El lock-in total de Wix es su mayor debilidad. Fabrika puede ofrecer portabilidad y estándares abiertos.
 
 **Estrategia defensiva de Fabrika:**
+
 - **Portabilidad como bandera** — "Tu sitio es tuyo, no nuestro"
 - **DSL abierto** como estándar de componentes (vs el formato propietario de Wix)
 - **Mejor editor visual** — competir en calidad de diseño, no en cantidad de features
@@ -705,6 +766,7 @@ Framer es el mejor en diseño visual y AI, pero no tiene ecommerce, no tiene bac
 - **Oportunidad para Fabrika:** Los usuarios de Framer que necesitan ecommerce o funcionalidad más allá de landing pages son clientes potenciales para Fabrika.
 
 **Estrategia defensiva de Fabrika:**
+
 - **Monitorear a Framer de cerca** — si añaden backend/ecommerce, reaccionar rápido
 - **Ofrecer calidad de diseño comparable** a Framer en el editor visual
 - **Posicionar Fabrika como "Framer + Shopify + WordPress en uno"**
@@ -731,11 +793,11 @@ Bubble es un app builder, no un constructor de sitios web. Su target (founders, 
 
 ### Océano rojo (competencia directa intensa)
 
-| Competidor       | Dónde compite directamente con Fabrika                          |
-|------------------|-----------------------------------------------------------------|
-| WordPress + Woo  | TODO: web, ecommerce, plugins, comunidad, precio, freelancers   |
-| Elementor        | Editor visual, freelancers, WordPress, dynamic content          |
-| Webflow          | Plataforma visual profesional, CMS, APIs, agencias, AI          |
+| Competidor      | Dónde compite directamente con Fabrika                        |
+| --------------- | ------------------------------------------------------------- |
+| WordPress + Woo | TODO: web, ecommerce, plugins, comunidad, precio, freelancers |
+| Elementor       | Editor visual, freelancers, WordPress, dynamic content        |
+| Webflow         | Plataforma visual profesional, CMS, APIs, agencias, AI        |
 
 ### Océano azul (oportunidades de diferenciación)
 

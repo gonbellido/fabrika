@@ -11,12 +11,7 @@
     "slug": "/productos",
     "publicationState": "draft"
   },
-  "permissions": [
-    "catalog.read",
-    "cart.write",
-    "content.read",
-    "media.read"
-  ],
+  "permissions": ["catalog.read", "cart.write", "content.read", "media.read"],
   "children": [],
   "slots": {
     "main": [

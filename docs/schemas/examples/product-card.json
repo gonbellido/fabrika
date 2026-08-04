@@ -50,10 +50,7 @@
       "onError": "cart.error"
     }
   },
-  "permissions": [
-    "catalog.read",
-    "cart.write"
-  ],
+  "permissions": ["catalog.read", "cart.write"],
   "children": [],
   "slots": {
     "header": [],

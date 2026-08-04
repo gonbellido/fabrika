@@ -2,13 +2,21 @@ import type { ComponentDSL } from "../dsl/types";
 
 // Mocked AI generation — returns a ProductCard for "product card" prompts
 // In production, this calls an LLM API with the DSL schema as system prompt
-export async function generateComponent(prompt: string, type: string = "ProductCard"): Promise<ComponentDSL> {
+export async function generateComponent(
+  prompt: string,
+  type: string = "ProductCard",
+): Promise<ComponentDSL> {
   // Simulate AI latency
   await new Promise((resolve) => setTimeout(resolve, 800));
 
   const normalizedType = type;
 
-  if (normalizedType === "ProductCard" || prompt.toLowerCase().includes("product") || prompt.toLowerCase().includes("producto") || prompt.toLowerCase().includes("tarjeta")) {
+  if (
+    normalizedType === "ProductCard" ||
+    prompt.toLowerCase().includes("product") ||
+    prompt.toLowerCase().includes("producto") ||
+    prompt.toLowerCase().includes("tarjeta")
+  ) {
     return {
       type: "ProductCard",
       version: "1.0.0",

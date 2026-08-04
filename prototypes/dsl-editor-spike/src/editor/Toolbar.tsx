@@ -51,8 +51,12 @@ export const Toolbar: FC = () => {
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
         <span style={{ fontWeight: 700, fontSize: 16, marginRight: 16 }}>Fabrika Editor</span>
 
-        <button onClick={undo} disabled={historyIndex <= 0} style={btnStyle}>↩ Undo</button>
-        <button onClick={redo} disabled={historyIndex >= historyLength - 1} style={btnStyle}>↪ Redo</button>
+        <button onClick={undo} disabled={historyIndex <= 0} style={btnStyle}>
+          ↩ Undo
+        </button>
+        <button onClick={redo} disabled={historyIndex >= historyLength - 1} style={btnStyle}>
+          ↪ Redo
+        </button>
       </div>
 
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>

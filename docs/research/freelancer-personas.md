@@ -7,9 +7,11 @@
 ## Persona 1: Diego, el constructor WordPress
 
 ### Name and role
+
 **Diego Ramírez**, 34, freelance web developer. Builds sites for local businesses, professionals, and SMEs. Self-taught, learned WordPress 10 years ago and never looked back.
 
 ### Typical projects
+
 - Corporate sites for SMEs (law firms, clinics, construction companies)
 - Landing pages for product launches and events
 - Restaurant and hospitality sites with menus and reservations
@@ -17,6 +19,7 @@
 - 15–20 projects/year, average project: $1,200–$2,500
 
 ### Current tools and stack
+
 - **WordPress** + **Elementor Pro** (primary builder)
 - Astra o Hello Elementor como theme base
 - Plugins: Yoast SEO, WP Rocket, Really Simple SSL, UpdraftPlus
@@ -26,6 +29,7 @@
 - Canva para gráficos rápidos
 
 ### Monthly revenue/budget
+
 - Revenue: $3,000–$5,000/month
 - Tool budget: $150–$250/month (hosting, Elementor Pro, plugin licenses, SaaS tools)
 - No budget for in-house developers — Diego does everything himself
@@ -46,18 +50,19 @@
 
 ### Decision criteria for adopting a new platform
 
-| Criterion | Priority |
-|-----------|----------|
-| Can replicate what I do in Elementor without fighting the tool | Deal-breaker |
-| Built-in security, no plugin patching | High |
-| Client can edit content safely without breaking design | High |
-| Performance out of the box (90+ PageSpeed without extra work) | High |
-| One predictable monthly price, not death by a thousand plugin renewals | Medium |
-| Dynamic data (catalogs, directories, blogs) without custom code or ACF | Medium |
-| Migration path — can I bring existing WordPress content over? | Medium |
-| Spanish-language admin and client interface | Medium |
+| Criterion                                                              | Priority     |
+| ---------------------------------------------------------------------- | ------------ |
+| Can replicate what I do in Elementor without fighting the tool         | Deal-breaker |
+| Built-in security, no plugin patching                                  | High         |
+| Client can edit content safely without breaking design                 | High         |
+| Performance out of the box (90+ PageSpeed without extra work)          | High         |
+| One predictable monthly price, not death by a thousand plugin renewals | Medium       |
+| Dynamic data (catalogs, directories, blogs) without custom code or ACF | Medium       |
+| Migration path — can I bring existing WordPress content over?          | Medium       |
+| Spanish-language admin and client interface                            | Medium       |
 
 ### Deal-breakers
+
 - Cannot build a full corporate site (10+ pages, blog, contact form, basic SEO)
 - Lock-in: no way to export content or hosting portability
 - Can't use my own domain or hosting
@@ -83,9 +88,11 @@
 ## Persona 2: Carmen, la especialista ecommerce
 
 ### Name and role
+
 **Carmen Vega**, 41, ecommerce freelancer. Builds and manages online stores for fashion brands, organic food producers, and niche DTC brands. Comes from a business background, not technical. Learned WooCommerce out of necessity.
 
 ### Typical projects
+
 - WooCommerce stores (30–500 products)
 - Multilingual stores (Spanish + English, occasionally Catalan or French)
 - Marketplace integrations (Amazon, Google Shopping, Meta Shops)
@@ -94,6 +101,7 @@
 - 3–4 retainer clients at $400–$800/month for maintenance and optimization
 
 ### Current tools and stack
+
 - **WordPress** + **WooCommerce** + Elementor Pro
 - Plugins: WPML (multilingual), WooCommerce Subscriptions, Stripe & Redsys gateways, Mailchimp for WooCommerce, Rank Math SEO, WP Rocket
 - Hosting: SiteGround Cloud or Cloudways (VPS)
@@ -102,6 +110,7 @@
 - Notion for client project tracking
 
 ### Monthly revenue/budget
+
 - Revenue: $4,500–$8,000/month
 - Tool budget: $300–$500/month (hosting VPS, WPML, premium plugins, email marketing, stock photos)
 - Occasionally hires a freelance developer for custom WooCommerce hooks or API integrations ($200–$500/project)
@@ -124,20 +133,21 @@
 
 ### Decision criteria for adopting a new platform
 
-| Criterion | Priority |
-|-----------|----------|
-| Native multilingual support, no plugin needed | Deal-breaker |
+| Criterion                                                             | Priority     |
+| --------------------------------------------------------------------- | ------------ |
+| Native multilingual support, no plugin needed                         | Deal-breaker |
 | Ecommerce core features: products, variants, cart, checkout, payments | Deal-breaker |
-| Multi-store management dashboard (single login, all stores) | High |
-| Payment gateway ecosystem (Stripe, Redsys, PayPal, Bizum) | High |
-| Performance with 500+ products and multiple languages | High |
-| Built-in security, no plugin patching, PCI-compliant by default | High |
-| Adapter ecosystem to connect external inventory/ERP systems | Medium |
-| Client role that can manage products/orders but not break settings | Medium |
-| Migration from WooCommerce (products, orders, customers) | Medium |
-| Abandoned cart recovery, email automation built-in or via adapter | Medium |
+| Multi-store management dashboard (single login, all stores)           | High         |
+| Payment gateway ecosystem (Stripe, Redsys, PayPal, Bizum)             | High         |
+| Performance with 500+ products and multiple languages                 | High         |
+| Built-in security, no plugin patching, PCI-compliant by default       | High         |
+| Adapter ecosystem to connect external inventory/ERP systems           | Medium       |
+| Client role that can manage products/orders but not break settings    | Medium       |
+| Migration from WooCommerce (products, orders, customers)              | Medium       |
+| Abandoned cart recovery, email automation built-in or via adapter     | Medium       |
 
 ### Deal-breakers
+
 - No ecommerce or ecommerce is MVP-level (missing variants, tax rules, shipping zones)
 - Cannot connect to Spanish payment gateways (Redsys is non-negotiable)
 - Multilingual requires a separate plugin or adds per-language cost
@@ -163,9 +173,11 @@
 ## Persona 3: Lucía, la diseñadora que codea
 
 ### Name and role
+
 **Lucía Mendes**, 29, UI/UX designer with frontend skills. Designs in Figma, then builds in Webflow or writes HTML/CSS/JS directly. Takes on projects that require custom design — templates feel "soul-less" to her and her clients. Has strong opinions about typography, spacing, and animation.
 
 ### Typical projects
+
 - Brand identity + website packages for startups and creative studios
 - Microsites and interactive landing pages with animations
 - Portfolio sites for artists, architects, and creative agencies
@@ -174,6 +186,7 @@
 - Also does pure design handoff (Figma files only) at $1,500–$3,000
 
 ### Current tools and stack
+
 - **Figma** + **FigJam** (design, prototyping, client feedback)
 - **Webflow** (primary build tool for production sites)
 - **Framer** (experimenting, mostly for personal projects and microsites)
@@ -183,6 +196,7 @@
 - Notion para project management, Slack para clientes
 
 ### Monthly revenue/budget
+
 - Revenue: $4,500–$9,000/month
 - Tool budget: $150–$300/month (Figma Pro, Webflow Workspace, Adobe CC, domain registrar, Vercel Pro)
 - Occasionally subcontracts a backend developer for custom integrations ($500–$1,500/project)
@@ -205,20 +219,21 @@
 
 ### Decision criteria for adopting a new platform
 
-| Criterion | Priority |
-|-----------|----------|
-| Design freedom — pixel-level control, custom animations, no grid/breakpoint limits | Deal-breaker |
-| CMS that clients can actually use without breaking things | Deal-breaker |
-| Figma-like collaboration: real-time multiplayer, comments on canvas | High |
-| Export and hosting portability — no lock-in | High |
-| Design-forward ecommerce: beautiful product pages, custom checkout styling | High |
-| Component variant system (like Figma components) for reusable design patterns | High |
-| Easing/animation timeline editor (not just presets) | Medium |
-| Code export for custom interactions when the GUI isn't enough | Medium |
-| Asset management (CDN, responsive images, WebP/AVIF automatically) | Medium |
-| AI as an assistant — not to replace design, but to generate variations and handle grunt work | Low |
+| Criterion                                                                                    | Priority     |
+| -------------------------------------------------------------------------------------------- | ------------ |
+| Design freedom — pixel-level control, custom animations, no grid/breakpoint limits           | Deal-breaker |
+| CMS that clients can actually use without breaking things                                    | Deal-breaker |
+| Figma-like collaboration: real-time multiplayer, comments on canvas                          | High         |
+| Export and hosting portability — no lock-in                                                  | High         |
+| Design-forward ecommerce: beautiful product pages, custom checkout styling                   | High         |
+| Component variant system (like Figma components) for reusable design patterns                | High         |
+| Easing/animation timeline editor (not just presets)                                          | Medium       |
+| Code export for custom interactions when the GUI isn't enough                                | Medium       |
+| Asset management (CDN, responsive images, WebP/AVIF automatically)                           | Medium       |
+| AI as an assistant — not to replace design, but to generate variations and handle grunt work | Low          |
 
 ### Deal-breakers
+
 - Limited design control: grid/layout constraints that block pixel-perfect work
 - No animation timeline editor or custom CSS override
 - CMS that can't handle relational content or custom content types
@@ -244,9 +259,11 @@
 ## Persona 4: Martín y Asociados, la agencia boutique
 
 ### Name and role
+
 **Martín Oliveira** and **Sofía Reyes**, co-founders of "Estudio Línea," a 6-person agency in Barcelona. They serve 20–25 active clients with a mix of corporate sites, ecommerce stores, and web apps. Martín handles business development and client relationships. Sofía oversees production and the dev team (2 mid-level devs, 1 junior, 1 designer).
 
 ### Typical projects
+
 - Corporate websites for mid-market companies (15–40 pages, multilingual, complex content structures)
 - Ecommerce stores (100–2,000 products, B2B and B2C)
 - Custom web applications (booking systems, client portals, membership platforms)
@@ -255,6 +272,7 @@
 - Retainer revenue: $8,000–$15,000/month across maintenance contracts
 
 ### Current tools and stack
+
 - **WordPress** + custom Gutenberg blocks for corporate sites
 - **WooCommerce** + custom plugins for ecommerce
 - **Laravel** + **Livewire** for custom web applications
@@ -265,6 +283,7 @@
 - Slack, Loom, Notion for internal and client communication
 
 ### Monthly revenue/budget
+
 - Revenue: $25,000–$45,000/month
 - Tool budget: $1,200–$2,000/month (hosting, SaaS, plugin licenses, design tools, dev tools, client communication)
 - Salary budget: $15,000–$22,000/month for 6 people
@@ -289,22 +308,23 @@
 
 ### Decision criteria for adopting a new platform
 
-| Criterion | Priority |
-|-----------|----------|
-| Multi-tenant dashboard: all clients, all sites, one interface | Deal-breaker |
-| Role-Based Access Control: client editor vs. agency admin vs. developer | Deal-breaker |
-| Consistent development framework across all projects — no more snowflakes | Deal-breaker |
-| Built-in security model, no plugin patching | High |
-| Team collaboration: simultaneous editing, version history, review workflow | High |
-| White-label client experience (branded admin, branded preview, no platform logos) | High |
-| Extensibility: can build custom providers, adapters, and sandboxed modules | High |
-| Performance baseline: 90+ PageSpeed without custom optimization per project | High |
-| Migration tooling: WordPress → Fabrika for content, products, users | Medium |
-| Infrastructure flexibility: self-hosted option or bring-your-own-cloud | Medium |
-| Marketplace for reusable templates and modules across agency projects | Medium |
-| API-first: headless consumption of Fabrika content from custom frontends | Medium |
+| Criterion                                                                         | Priority     |
+| --------------------------------------------------------------------------------- | ------------ |
+| Multi-tenant dashboard: all clients, all sites, one interface                     | Deal-breaker |
+| Role-Based Access Control: client editor vs. agency admin vs. developer           | Deal-breaker |
+| Consistent development framework across all projects — no more snowflakes         | Deal-breaker |
+| Built-in security model, no plugin patching                                       | High         |
+| Team collaboration: simultaneous editing, version history, review workflow        | High         |
+| White-label client experience (branded admin, branded preview, no platform logos) | High         |
+| Extensibility: can build custom providers, adapters, and sandboxed modules        | High         |
+| Performance baseline: 90+ PageSpeed without custom optimization per project       | High         |
+| Migration tooling: WordPress → Fabrika for content, products, users               | Medium       |
+| Infrastructure flexibility: self-hosted option or bring-your-own-cloud            | Medium       |
+| Marketplace for reusable templates and modules across agency projects             | Medium       |
+| API-first: headless consumption of Fabrika content from custom frontends          | Medium       |
 
 ### Deal-breakers
+
 - No multi-tenant management — must be able to manage all clients from a single interface
 - No fine-grained RBAC (client, editor, developer, admin roles)
 - Cannot build custom capabilities or extend the platform with custom modules
@@ -342,26 +362,31 @@
 ### Top 5 Migration Triggers
 
 #### 1. A security breach or near-miss
+
 **The trigger:** The freelancer's site (or a colleague's site) gets hacked. Customer data leaks. Google blacklists the domain. The client is furious. The freelancer spends a weekend in crisis mode.
 **The moment of decision:** They realize they're one plugin vulnerability away from losing their business. A platform that guarantees security at the architectural level — not via patches and hope — becomes non-negotiable.
 **What Fabrika offers:** Sandbox isolation, capability-based permissions, no executable plugin code, security at the platform layer.
 
 #### 2. Plugin fatigue reaching a breaking point
+
 **The trigger:** A critical client site goes down because three plugins updated overnight and conflicted. Or the freelancer realizes they spend 30% of their workweek on maintenance, updates, and compatibility testing. Or a plugin they depend on gets abandoned by its developer.
 **The moment of decision:** The "WordPress is free" illusion shatters. They do the math and realize their tool stack costs more than a SaaS platform would, and the hidden maintenance cost dwarfs everything else.
 **What Fabrika offers:** Modules and adapters as first-party platform features, no plugin compatibility matrix, unified updates.
 
 #### 3. Landing a project WordPress can't handle well
+
 **The trigger:** A client wants something WordPress does poorly: real-time collaboration, complex relational data, fine-grained user permissions, a truly multilingual site without performance penalties, or a design that requires pixel-level control without fighting the CMS.
 **The moment of decision:** The freelancer prototypes in Webflow or builds a custom app by stitching tools together. They enjoy the experience and start questioning why they tolerate WordPress for simpler projects too.
 **What Fabrika offers:** Unified visual editing + data layer + fine-grained permissions. The "WordPress can't do this, so I need a different tool" gap closes.
 
 #### 4. A competitor using a modern platform wins their client
+
 **The trigger:** A prospective client says: "We're going with Agency X instead. They showed us a demo on [modern platform] and we could edit content ourselves. Their turnaround was 2 weeks faster. Their demo just felt more polished."
 **The moment of decision:** The freelancer realizes WordPress is becoming a competitive liability. Clients don't care about platforms — they care about speed, control, and results. If a competitor delivers that better on a different stack, the freelancer must adapt or lose deals.
 **What Fabrika offers:** Faster project delivery (templates + AI assistance), client self-service editing, performance out of the box, modern demo experience.
 
 #### 5. A pricing or business model change in their stack
+
 **The trigger:** Elementor raises prices. WP Engine changes its plan structure. A critical plugin moves to a per-domain SaaS model. The cumulative tool cost crosses a psychological threshold ($300/month? $500/month?).
 **The moment of decision:** The freelancer reevaluates their entire tool stack. If a comparable or better platform costs less or offers more predictable pricing, the switching calculus flips. The "better the devil you know" argument weakens when the known devil gets expensive.
 **What Fabrika offers:** Predictable pricing (single platform fee vs. plugin licensing chaos), no per-plugin costs, no hidden infrastructure costs.
@@ -377,12 +402,12 @@
 
 ## Summary Matrix
 
-| Persona | Projects/year | Avg. project | Monthly revenue | Primary pain | Switch trigger |
-|---------|---------------|--------------|-----------------|--------------|----------------|
-| Diego | 15–20 | $1,500–$2,500 | $3K–$5K | Plugin hell + security anxiety | Security breach + plugin fatigue |
-| Carmen | 8–12 | $4K–$8K | $4.5K–$8K | WooCommerce fragility + multilingual cost | Store outage + licensing chaos |
-| Lucía | 8–10 | $5K–$10K | $4.5K–$9K | Design-to-code gap + CMS rigidity | Losing a premium client to Webflow agency |
-| Estudio Línea | 25–35 | $10K–$25K | $25K–$45K | Multi-site scaling + team consistency | Competitor differentiation + margin pressure |
+| Persona       | Projects/year | Avg. project  | Monthly revenue | Primary pain                              | Switch trigger                               |
+| ------------- | ------------- | ------------- | --------------- | ----------------------------------------- | -------------------------------------------- |
+| Diego         | 15–20         | $1,500–$2,500 | $3K–$5K         | Plugin hell + security anxiety            | Security breach + plugin fatigue             |
+| Carmen        | 8–12          | $4K–$8K       | $4.5K–$8K       | WooCommerce fragility + multilingual cost | Store outage + licensing chaos               |
+| Lucía         | 8–10          | $5K–$10K      | $4.5K–$9K       | Design-to-code gap + CMS rigidity         | Losing a premium client to Webflow agency    |
+| Estudio Línea | 25–35         | $10K–$25K     | $25K–$45K       | Multi-site scaling + team consistency     | Competitor differentiation + margin pressure |
 
 ---
 

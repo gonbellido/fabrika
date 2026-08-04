@@ -47,7 +47,9 @@ export const Panel: FC = () => {
             <tbody>
               {Object.entries(component.bindings).map(([key, value]) => (
                 <tr key={key}>
-                  <td style={{ padding: "4px 0", fontFamily: "monospace", color: "#1e3a5f" }}>{key}</td>
+                  <td style={{ padding: "4px 0", fontFamily: "monospace", color: "#1e3a5f" }}>
+                    {key}
+                  </td>
                   <td style={{ padding: "4px 0", color: "#666" }}>→ {value}</td>
                 </tr>
               ))}
@@ -65,7 +67,15 @@ export const Panel: FC = () => {
               <strong>{event}</strong>
               <div style={{ fontFamily: "monospace", color: "#1e3a5f" }}>{action.capability}</div>
               {action.params && (
-                <pre style={{ fontSize: 11, margin: "4px 0", background: "#e5e7eb", padding: 4, borderRadius: 4 }}>
+                <pre
+                  style={{
+                    fontSize: 11,
+                    margin: "4px 0",
+                    background: "#e5e7eb",
+                    padding: 4,
+                    borderRadius: 4,
+                  }}
+                >
                   {JSON.stringify(action.params, null, 2)}
                 </pre>
               )}
@@ -122,7 +132,15 @@ export const Panel: FC = () => {
 
 const Section: FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
   <div style={{ marginBottom: 20 }}>
-    <h4 style={{ margin: "0 0 8px", fontSize: 13, textTransform: "uppercase", color: "#6b7280", letterSpacing: "0.05em" }}>
+    <h4
+      style={{
+        margin: "0 0 8px",
+        fontSize: 13,
+        textTransform: "uppercase",
+        color: "#6b7280",
+        letterSpacing: "0.05em",
+      }}
+    >
       {title}
     </h4>
     {children}

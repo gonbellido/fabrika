@@ -27,6 +27,7 @@ El runtime — no el componente — decide cómo resolver `product.price`. Puede
 ### 2. Validable en build-time y runtime
 
 Todo componente pasa por `JSON Schema` antes de:
+
 - Guardarse en la base de datos
 - Renderizarse en el canvas del editor
 - Publicarse en un site
@@ -36,6 +37,7 @@ Si no valida, se rechaza. Sin excepciones.
 ### 3. Versionado
 
 Cada componente tiene `version` semántica. Cada `schema` tiene URI canónica. Esto permite:
+
 - Migraciones entre versiones del schema
 - Coexistencia de componentes v1 y v2 en el mismo site
 - Rollback a versiones anteriores del componente
@@ -43,6 +45,7 @@ Cada componente tiene `version` semántica. Cada `schema` tiene URI canónica. E
 ### 4. Sin lógica ejecutable
 
 El DSL no contiene:
+
 - ❌ JavaScript / TypeScript
 - ❌ SQL
 - ❌ GraphQL queries
@@ -53,6 +56,7 @@ El DSL no contiene:
 - ❌ `eval`, `new Function`
 
 Solo contiene:
+
 - ✅ Estructura (árbol de componentes)
 - ✅ Estilos (CSS declarativo por breakpoint)
 - ✅ Bindings (paths a campos de contratos de Provider)
@@ -79,15 +83,18 @@ Ambos coexisten. Un componente puede usar uno, otro, o ambos. El renderer decide
 ### Actions con parámetros bindeados
 
 Las actions no contienen lógica. Solo declaran:
+
 - Qué capability invocar (`cart.write`)
 - Con qué parámetros (`product.id`, `quantity: 1`)
 - Confirmación opcional
 - Eventos de success/error
 
 El runtime resuelve los bindings en los params antes de invocar la capability. Ejemplo:
+
 ```json
 "params": { "productId": "product.id" }
 ```
+
 El runtime lee `product.id` del provider, lo inyecta en la llamada a `cart.write(productId)`.
 
 ### Permissions como array de strings

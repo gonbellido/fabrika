@@ -180,49 +180,55 @@ fabrika/
 ## 5. Stack tecnológico
 
 ### Frontend (Editor SPA)
-| Tecnología | Justificación | Referencia |
-|-----------|---------------|-----------|
+
+| Tecnología            | Justificación                      | Referencia      |
+| --------------------- | ---------------------------------- | --------------- |
 | React 18 + TypeScript | Ecosistema maduro, tipado estricto | Plan técnico §2 |
-| Vite | Build rápido, HMR instantáneo | Plan técnico §2 |
-| @dnd-kit + Craft.js | Drag & drop tipo Elementor | Plan técnico §2 |
-| Zustand | Estado ligero, sin boilerplate | Plan técnico §2 |
-| Yjs (CRDT) | Colaboración en tiempo real futura | Plan técnico §2 |
+| Vite                  | Build rápido, HMR instantáneo      | Plan técnico §2 |
+| @dnd-kit + Craft.js   | Drag & drop tipo Elementor         | Plan técnico §2 |
+| Zustand               | Estado ligero, sin boilerplate     | Plan técnico §2 |
+| Yjs (CRDT)            | Colaboración en tiempo real futura | Plan técnico §2 |
 
 ### Backend (Core API)
-| Tecnología | Justificación | Referencia |
-|-----------|---------------|-----------|
-| NestJS (Node.js) | API REST principal, madurez, tipado | Plan técnico §2 |
-| Rust (Axum) | Partes críticas de rendimiento/seguridad | Plan técnico §2 |
-| PostgreSQL 15+ | Multi-tenant nativo con RLS | Plan técnico §6 |
-| Keycloak | Auth OpenID Connect, MFA | Plan técnico §2 |
-| Prisma | ORM tipado, migraciones | Propuesto |
+
+| Tecnología       | Justificación                            | Referencia      |
+| ---------------- | ---------------------------------------- | --------------- |
+| NestJS (Node.js) | API REST principal, madurez, tipado      | Plan técnico §2 |
+| Rust (Axum)      | Partes críticas de rendimiento/seguridad | Plan técnico §2 |
+| PostgreSQL 15+   | Multi-tenant nativo con RLS              | Plan técnico §6 |
+| Keycloak         | Auth OpenID Connect, MFA                 | Plan técnico §2 |
+| Prisma           | ORM tipado, migraciones                  | Propuesto       |
 
 ### DSL y validación
-| Tecnología | Justificación | Referencia |
-|-----------|---------------|-----------|
-| JSON Schema 2020-12 | Estándar, portable, validable | Plan técnico §4 |
-| AJV | Validador más rápido | Plan técnico §4 |
-| Zod | Validación en runtime TypeScript | Plan técnico §4 |
+
+| Tecnología          | Justificación                    | Referencia      |
+| ------------------- | -------------------------------- | --------------- |
+| JSON Schema 2020-12 | Estándar, portable, validable    | Plan técnico §4 |
+| AJV                 | Validador más rápido             | Plan técnico §4 |
+| Zod                 | Validación en runtime TypeScript | Plan técnico §4 |
 
 ### Publicación
-| Tecnología | Justificación | Referencia |
-|-----------|---------------|-----------|
-| Astro/Next.js SSG | Sitios estáticos, ISR, rendimiento | Plan técnico §3 |
-| CDN (Cloudflare/Fastly) | Edge computing, feature flags | Propuesto |
+
+| Tecnología              | Justificación                      | Referencia      |
+| ----------------------- | ---------------------------------- | --------------- |
+| Astro/Next.js SSG       | Sitios estáticos, ISR, rendimiento | Plan técnico §3 |
+| CDN (Cloudflare/Fastly) | Edge computing, feature flags      | Propuesto       |
 
 ### Sandbox
-| Tecnología | Justificación | Referencia |
-|-----------|---------------|-----------|
+
+| Tecnología         | Justificación                    | Referencia      |
+| ------------------ | -------------------------------- | --------------- |
 | WebAssembly (WASM) | Aislamiento, límites de recursos | Plan técnico §7 |
-| wasmtime | Runtime WASM standalone | Plan técnico §7 |
+| wasmtime           | Runtime WASM standalone          | Plan técnico §7 |
 
 ### Infraestructura
-| Tecnología | Justificación | Referencia |
-|-----------|---------------|-----------|
-| Terraform | IaC, reproducible | Plan técnico §10 |
-| Docker Compose | Desarrollo local | Propuesto |
-| GitHub Actions | CI/CD | Propuesto |
-| Vault | Gestión de secrets | Plan técnico §6 |
+
+| Tecnología     | Justificación      | Referencia       |
+| -------------- | ------------------ | ---------------- |
+| Terraform      | IaC, reproducible  | Plan técnico §10 |
+| Docker Compose | Desarrollo local   | Propuesto        |
+| GitHub Actions | CI/CD              | Propuesto        |
+| Vault          | Gestión de secrets | Plan técnico §6  |
 
 ## 6. Contratos entre capas
 

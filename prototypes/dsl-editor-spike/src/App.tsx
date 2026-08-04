@@ -15,10 +15,13 @@ function App() {
   const component = useEditorStore((s) => s.component);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const handleGenerate = useCallback(async (type: string) => {
-    const comp = await generateComponent(`Generate a ${type}`, type);
-    loadComponent(comp);
-  }, [loadComponent]);
+  const handleGenerate = useCallback(
+    async (type: string) => {
+      const comp = await generateComponent(`Generate a ${type}`, type);
+      loadComponent(comp);
+    },
+    [loadComponent],
+  );
 
   const handleFileLoad = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -40,7 +43,7 @@ function App() {
       };
       reader.readAsText(file);
     },
-    [loadComponent]
+    [loadComponent],
   );
 
   return (
