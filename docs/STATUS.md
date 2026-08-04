@@ -4,8 +4,8 @@
 
 ## Resumen
 
-- Commits: 8 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
-- Fase: Arquitectura documentada. Siguiente: infraestructura base (monorepo, CI/CD, Terraform)
+- Commits: 10 | Tablas: 6 (schema RLS) | Paquetes: 2 (@fabrika/dsl, @fabrika/capabilities) | CI: ✅
+- Fase: Infraestructura base montada. Siguiente: Terraform, Core API, Editor
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
