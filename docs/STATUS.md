@@ -4,8 +4,8 @@
 
 ## Resumen
 
-- Commits: 12 | Paquetes: 4 | CI: ✅ | DB: 6 tablas (Prisma schema)
-- Fase: Fundaciones completadas. Siguiente: publishing engine, sandbox WASM, editor SPA
+- Commits: 13 | Paquetes: 5 | CI: ✅ | DB: 6 tablas (Prisma + RLS)
+- Fase: Publishing engine completado. Siguiente: sandbox WASM, editor SPA
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
