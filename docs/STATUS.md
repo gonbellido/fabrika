@@ -4,8 +4,8 @@
 
 ## Resumen
 
-- Commits: 10 | Tablas: 6 (schema RLS) | Paquetes: 2 (@fabrika/dsl, @fabrika/capabilities) | CI: ✅
-- Fase: Infraestructura base montada. Siguiente: Terraform, Core API, Editor
+- Commits: 12 | Paquetes: 4 | CI: ✅ | DB: 6 tablas (Prisma schema)
+- Fase: Fundaciones completadas. Siguiente: publishing engine, sandbox WASM, editor SPA
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
