@@ -1,8 +1,25 @@
-import { Controller, Get, Post, Param, Body, Req } from '@nestjs/common';
-import type { Request } from 'express';
-import { PrismaService } from '../common/prisma.service';
+import {
+  Controller,
+  Get,
+  Post,
+  Param,
+  Body,
+  Req,
+  NotFoundException,
+  BadRequestException,
+} from "@nestjs/common";
+import type { Request } from "express";
+import { PrismaService } from "../common/prisma.service";
 
-@Controller('tenants')
+function validateUuid(id: string, name: string) {
+  const uuidRegex =
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  if (!uuidRegex.test(id)) {
+    throw new BadRequestException(`Invalid ${name} ID format`);
+  }
+}
+
+@Controller("tenants")
 export class TenantsController {
   constructor(private readonly prisma: PrismaService) {}
 
@@ -14,9 +31,12 @@ export class TenantsController {
     return this.prisma.tenant.findMany();
   }
 
-  @Get(':id')
-  async get(@Param('id') id: string) {
-    return this.prisma.tenant.findUniqueOrThrow({ where: { id } });
+  @Get(":id")
+  async get(@Param("id") id: string) {
+    validateUuid(id, "tenant");
+    const tenant = await this.prisma.tenant.findUnique({ where: { id } });
+    if (!tenant) throw new NotFoundException("Tenant not found");
+    return tenant;
   }
 
   @Post()
