@@ -7,9 +7,9 @@ import {
   Req,
   NotFoundException,
   BadRequestException,
-} from "@nestjs/common";
-import type { Request } from "express";
-import { PrismaService } from "../common/prisma.service";
+} from '@nestjs/common';
+import type { Request } from 'express';
+import { PrismaService } from '../common/prisma.service';
 
 function validateUuid(id: string, name: string) {
   const uuidRegex =
@@ -19,7 +19,7 @@ function validateUuid(id: string, name: string) {
   }
 }
 
-@Controller("tenants")
+@Controller('tenants')
 export class TenantsController {
   constructor(private readonly prisma: PrismaService) {}
 
@@ -31,11 +31,11 @@ export class TenantsController {
     return this.prisma.tenant.findMany();
   }
 
-  @Get(":id")
-  async get(@Param("id") id: string) {
-    validateUuid(id, "tenant");
+  @Get(':id')
+  async get(@Param('id') id: string) {
+    validateUuid(id, 'tenant');
     const tenant = await this.prisma.tenant.findUnique({ where: { id } });
-    if (!tenant) throw new NotFoundException("Tenant not found");
+    if (!tenant) throw new NotFoundException('Tenant not found');
     return tenant;
   }
 
