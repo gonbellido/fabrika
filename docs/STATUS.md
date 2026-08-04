@@ -3,8 +3,8 @@
 > Última actualización: 2026-08-04
 
 ## Resumen
-- Commits: 5 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
-- Fase: Investigación + DSL definidos. Siguiente: benchmark práctico + prototipo
+- Commits: 6 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
+- Fase: Prototipo funcional. Siguiente: conectar IA real, benchmark práctico
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
