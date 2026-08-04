@@ -4,8 +4,8 @@
 
 ## Resumen
 
-- Commits: 16 | Paquetes: 7 (6 core + 1 app) | CI: ✅ | DB: 6 tablas
-- Fase: Core completo. Siguiente: Terraform, tests, docs
+- Commits: 17 | Paquetes: 7 + Terraform | CI: ✅ | DB: 6 tablas
+- Fase: Infraestructura como código completada. Plataforma core lista para desarrollo.
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
