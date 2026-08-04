@@ -22,7 +22,7 @@ describe("PublishingEngine", () => {
     it("generates HTML for all breakpoints", () => {
       const result = engine.publish({
         id: "p1",
-        siteId: "s1",
+        siteId: "s1", tenantId: "t1",
         slug: "test",
         title: "Test Page",
         dsl: base,
@@ -38,7 +38,7 @@ describe("PublishingEngine", () => {
       const result = engine.publish(
         {
           id: "p1",
-          siteId: "s1",
+          siteId: "s1", tenantId: "t1",
           slug: "test",
           title: "Test Page",
           dsl: base,
@@ -54,7 +54,7 @@ describe("PublishingEngine", () => {
     it("renders component type in HTML", () => {
       const result = engine.publish({
         id: "p1",
-        siteId: "s1",
+        siteId: "s1", tenantId: "t1",
         slug: "test",
         title: "Test",
         dsl: base,
@@ -66,7 +66,7 @@ describe("PublishingEngine", () => {
     it("includes meta tags", () => {
       const result = engine.publish({
         id: "p1",
-        siteId: "s1",
+        siteId: "s1", tenantId: "t1",
         slug: "test",
         title: "Test Page",
         dsl: base,
@@ -99,7 +99,7 @@ describe("PublishingEngine", () => {
 
       const result = eng.publish({
         id: "p1",
-        siteId: "s1",
+        siteId: "s1", tenantId: "t1",
         slug: "test",
         title: "Test",
         dsl: flagged,
@@ -196,7 +196,7 @@ describe("VersionManager", () => {
     vm.record(
       {
         id: "p1",
-        siteId: "s1",
+        siteId: "s1", tenantId: "t1",
         title: "Test",
         slug: "test",
         dsl: base,
@@ -234,7 +234,7 @@ describe("VersionManager", () => {
     vm2.record(
       {
         id: "p2",
-        siteId: "s1",
+        siteId: "s1", tenantId: "t1",
         title: "T",
         slug: "t",
         dsl: base,
@@ -246,7 +246,7 @@ describe("VersionManager", () => {
     vm2.record(
       {
         id: "p2",
-        siteId: "s1",
+        siteId: "s1", tenantId: "t1",
         title: "T",
         slug: "t",
         dsl: base,

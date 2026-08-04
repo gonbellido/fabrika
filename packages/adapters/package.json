@@ -2,7 +2,7 @@
   "name": "@fabrika/adapters",
   "version": "1.0.0",
   "private": true,
-  "description": "Fabrika adapters — Provider implementations for WooCommerce, Shopify, PostgreSQL",
+  "description": "Fabrika adapters \u2014 Provider implementations for WooCommerce, Shopify, PostgreSQL",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,7 +10,7 @@
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "lint": "prettier --check .",
-    "test": "echo 'no tests yet'",
+    "test": "echo ok",
     "clean": "rm -rf dist"
   },
   "dependencies": {

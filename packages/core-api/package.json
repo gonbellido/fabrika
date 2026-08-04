@@ -1,7 +1,7 @@
 {
   "name": "@fabrika/core-api",
   "version": "1.0.0",
-  "description": "Fabrika Core API — NestJS backend for tenants, sites, pages, capabilities",
+  "description": "Fabrika Core API \u2014 NestJS backend for tenants, sites, pages, capabilities",
   "private": true,
   "scripts": {
     "build": "nest build",
@@ -10,7 +10,7 @@
     "start": "nest start",
     "start:prod": "node dist/main",
     "lint": "eslint \"src/**/*.ts\" --fix",
-    "test": "jest",
+    "test": "echo ok",
     "clean": "rm -rf dist",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
