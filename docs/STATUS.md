@@ -3,8 +3,8 @@
 > Última actualización: 2026-08-04
 
 ## Resumen
-- Commits: 3 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
-- Fase: Investigación completada. Siguiente: DSL + prototipo
+- Commits: 5 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
+- Fase: Investigación + DSL definidos. Siguiente: benchmark práctico + prototipo
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
