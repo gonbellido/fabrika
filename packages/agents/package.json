@@ -2,7 +2,7 @@
   "name": "@fabrika/agents",
   "version": "1.0.0",
   "private": true,
-  "description": "Fabrika multi-agent factory — agent types, orchestrator, message bus",
+  "description": "Fabrika multi-agent factory \u2014 agent types, orchestrator, message bus",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,7 +10,7 @@
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "lint": "prettier --check .",
-    "test": "echo 'no tests yet'",
+    "test": "vitest run",
     "clean": "rm -rf dist"
   },
   "devDependencies": {

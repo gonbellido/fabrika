@@ -2,7 +2,7 @@
   "name": "@fabrika/publishing",
   "version": "1.0.0",
   "private": true,
-  "description": "Fabrika publishing engine — DSL → static HTML with versioning and feature flags",
+  "description": "Fabrika publishing engine \u2014 DSL \u2192 static HTML with versioning and feature flags",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "dev": "tsc --watch",
     "lint": "prettier --check .",
-    "test": "echo 'no tests yet'",
+    "test": "vitest run",
     "clean": "rm -rf dist"
   },
   "dependencies": {

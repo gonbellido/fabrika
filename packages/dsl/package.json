@@ -10,7 +10,7 @@
     "build": "tsc",
     "typecheck": "tsc --noEmit",
     "lint": "prettier --check .",
-    "test": "echo 'no tests yet'",
+    "test": "vitest run",
     "clean": "rm -rf dist"
   },
   "dependencies": {

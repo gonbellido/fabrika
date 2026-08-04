@@ -4,7 +4,6 @@ import type { AgentConfig } from "./types.js";
  * Configuración de los 14 agentes de la fábrica.
  * AgentConfig define autonomía, capabilities, y propósito.
  */
-
 export const agentConfigs = new Map<string, AgentConfig>([
   [
     "product",
@@ -32,7 +31,18 @@ export const agentConfigs = new Map<string, AgentConfig>([
       role: "architecture",
       autonomy: "assisted",
       capabilities: [],
-      systemPrompt: "Propón ADRs, modelos de datos, contratos. No generes implementación.",
+      systemPrompt:
+        "Propón ADRs, modelos de datos, contratos. No generes implementación.",
+    },
+  ],
+  [
+    "ux",
+    {
+      role: "ux",
+      autonomy: "assisted",
+      capabilities: ["content.read"],
+      systemPrompt:
+        "Diseña flujos de editor, estados, responsive, accesibilidad. Entrega wireframes y especificaciones de diseño.",
     },
   ],
   [
