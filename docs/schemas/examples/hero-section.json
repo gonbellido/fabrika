@@ -1,0 +1,93 @@
+{
+  "type": "Section",
+  "version": "1.0.0",
+  "schema": "https://fabrika.dev/schemas/component-v1",
+  "label": "Hero con CTA",
+  "category": "layout",
+  "props": {
+    "layout": "row",
+    "align": "center",
+    "justify": "space-between",
+    "background": "gradient"
+  },
+  "styles": {
+    "desktop": {
+      "display": "flex",
+      "padding": "80px 60px",
+      "minHeight": "500px",
+      "gap": "40px"
+    },
+    "mobile": {
+      "flexDirection": "column",
+      "padding": "40px 20px",
+      "minHeight": "auto"
+    }
+  },
+  "bindings": {},
+  "actions": {},
+  "permissions": [],
+  "children": [],
+  "slots": {
+    "left": [
+      {
+        "type": "Heading",
+        "version": "1.0.0",
+        "schema": "https://fabrika.dev/schemas/component-v1",
+        "props": {
+          "level": "h1",
+          "size": "xl"
+        },
+        "bindings": {
+          "text": "hero.title"
+        },
+        "permissions": ["content.read"],
+        "children": [],
+        "meta": { "source": "human", "tags": ["hero", "heading"] }
+      },
+      {
+        "type": "Button",
+        "version": "1.0.0",
+        "schema": "https://fabrika.dev/schemas/component-v1",
+        "props": {
+          "variant": "primary",
+          "size": "lg"
+        },
+        "bindings": {
+          "label": "hero.cta"
+        },
+        "actions": {
+          "onClick": {
+            "capability": "content.read",
+            "params": { "pageId": "hero.ctaLink" }
+          }
+        },
+        "permissions": ["content.read"],
+        "children": [],
+        "meta": { "source": "human", "tags": ["hero", "button"] }
+      }
+    ],
+    "right": [
+      {
+        "type": "Image",
+        "version": "1.0.0",
+        "schema": "https://fabrika.dev/schemas/component-v1",
+        "props": {
+          "fit": "cover",
+          "rounded": true
+        },
+        "bindings": {
+          "src": "hero.image"
+        },
+        "permissions": ["media.read"],
+        "children": [],
+        "meta": { "source": "human", "tags": ["hero", "image"] }
+      }
+    ]
+  },
+  "meta": {
+    "author": "human-editor",
+    "source": "human",
+    "createdAt": "2026-08-04T17:00:00Z",
+    "tags": ["hero", "section", "landing"]
+  }
+}

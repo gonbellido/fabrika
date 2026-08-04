@@ -1,0 +1,69 @@
+{
+  "type": "ProductCard",
+  "version": "1.0.0",
+  "schema": "https://fabrika.dev/schemas/component-v1",
+  "label": "Tarjeta de Producto",
+  "description": "Tarjeta de producto con imagen, nombre, precio, valoración y botón de compra.",
+  "category": "ecommerce",
+  "props": {
+    "theme": "light",
+    "showRating": true,
+    "showDiscount": true,
+    "imageRatio": "4:3",
+    "buttonLabel": "Añadir al carrito"
+  },
+  "styles": {
+    "desktop": {
+      "maxWidth": "320px",
+      "borderRadius": "12px",
+      "padding": "16px",
+      "gap": "12px",
+      "display": "flex",
+      "flexDirection": "column"
+    },
+    "tablet": {
+      "maxWidth": "280px"
+    },
+    "mobile": {
+      "maxWidth": "100%",
+      "borderRadius": "8px"
+    }
+  },
+  "bindings": {
+    "title": "product.name",
+    "image": "product.images.0.url",
+    "price": "product.price",
+    "compareAtPrice": "product.compareAtPrice",
+    "rating": "product.rating",
+    "reviewCount": "product.reviewCount",
+    "stockStatus": "product.stockStatus"
+  },
+  "actions": {
+    "onClickAddToCart": {
+      "capability": "cart.write",
+      "params": {
+        "productId": "product.id",
+        "quantity": 1
+      },
+      "confirm": "¿Añadir al carrito?",
+      "onSuccess": "cart.updated",
+      "onError": "cart.error"
+    }
+  },
+  "permissions": [
+    "catalog.read",
+    "cart.write"
+  ],
+  "children": [],
+  "slots": {
+    "header": [],
+    "footer": []
+  },
+  "meta": {
+    "author": "ai-builder-01",
+    "source": "ai",
+    "createdAt": "2026-08-04T17:00:00Z",
+    "updatedAt": "2026-08-04T17:00:00Z",
+    "tags": ["product", "ecommerce", "card"]
+  }
+}

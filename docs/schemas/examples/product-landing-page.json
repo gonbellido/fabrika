@@ -1,0 +1,116 @@
+{
+  "type": "Page",
+  "version": "1.0.0",
+  "schema": "https://fabrika.dev/schemas/component-v1",
+  "label": "Landing de Producto",
+  "description": "Página de producto con hero, grid de productos y footer.",
+  "category": "content",
+  "props": {
+    "seoTitle": "Tienda Demo — Productos",
+    "seoDescription": "Descubre nuestra colección de productos.",
+    "slug": "/productos",
+    "publicationState": "draft"
+  },
+  "permissions": [
+    "catalog.read",
+    "cart.write",
+    "content.read",
+    "media.read"
+  ],
+  "children": [],
+  "slots": {
+    "main": [
+      {
+        "$ref": "./examples/hero-section.json#",
+        "$comment": "Ref externa resuelta por el runtime en build-time"
+      },
+      {
+        "type": "Section",
+        "version": "1.0.0",
+        "schema": "https://fabrika.dev/schemas/component-v1",
+        "label": "Grid de Productos",
+        "category": "layout",
+        "props": {
+          "layout": "grid",
+          "columns": 3,
+          "gap": "24px"
+        },
+        "styles": {
+          "desktop": {
+            "padding": "60px",
+            "display": "grid",
+            "gridTemplateColumns": "repeat(3, 1fr)",
+            "gap": "24px"
+          },
+          "tablet": {
+            "gridTemplateColumns": "repeat(2, 1fr)",
+            "padding": "40px"
+          },
+          "mobile": {
+            "gridTemplateColumns": "1fr",
+            "padding": "20px"
+          }
+        },
+        "bindings": {},
+        "actions": {},
+        "permissions": [],
+        "children": [],
+        "slots": {
+          "items": [
+            {
+              "$ref": "./examples/product-card.json#",
+              "$comment": "El runtime itera sobre catalog.items y replica este template por cada producto"
+            }
+          ]
+        },
+        "meta": { "source": "template", "tags": ["product", "grid"] }
+      }
+    ],
+    "header": [
+      {
+        "type": "Header",
+        "version": "1.0.0",
+        "schema": "https://fabrika.dev/schemas/component-v1",
+        "label": "Header Principal",
+        "category": "navigation",
+        "props": {
+          "sticky": true,
+          "logo": "site.logo",
+          "menuItems": [
+            { "label": "Inicio", "link": "/" },
+            { "label": "Productos", "link": "/productos" },
+            { "label": "Contacto", "link": "/contacto" }
+          ]
+        },
+        "permissions": ["site.read", "content.read"],
+        "children": [],
+        "meta": { "source": "template", "tags": ["header", "navigation"] }
+      }
+    ],
+    "footer": [
+      {
+        "type": "Footer",
+        "version": "1.0.0",
+        "schema": "https://fabrika.dev/schemas/component-v1",
+        "label": "Footer Principal",
+        "category": "content",
+        "props": {
+          "showNewsletter": true,
+          "showSocialLinks": true
+        },
+        "bindings": {
+          "copyright": "site.copyright"
+        },
+        "permissions": ["site.read"],
+        "children": [],
+        "meta": { "source": "template", "tags": ["footer"] }
+      }
+    ]
+  },
+  "meta": {
+    "author": "human-editor",
+    "source": "template",
+    "createdAt": "2026-08-04T17:00:00Z",
+    "tags": ["landing", "ecommerce", "product-page"]
+  }
+}

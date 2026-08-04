@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fabrika.dev/schemas/component-v1",
+  "title": "Component",
+  "description": "Fabrika DSL — Component schema v1. Unidad atómica declarativa. Sin lógica ejecutable.",
+  "type": "object",
+  "required": ["type", "version", "schema"],
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "Tipo del componente. Determina qué renderer lo procesa.",
+      "examples": ["ProductCard", "Hero", "Button", "Grid", "Section"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Versión semántica del componente.",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(-[a-zA-Z0-9.]+)?$",
+      "examples": ["1.0.0", "2.3.0-beta.1"]
+    },
+    "schema": {
+      "type": "string",
+      "description": "URI del JSON Schema que valida este componente.",
+      "const": "https://fabrika.dev/schemas/component-v1"
+    },
+    "label": {
+      "type": "string",
+      "description": "Nombre legible para el usuario en el editor.",
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "description": "Descripción del propósito del componente.",
+      "maxLength": 500
+    },
+    "category": {
+      "type": "string",
+      "description": "Categoría en la librería de componentes.",
+      "enum": ["layout", "content", "ecommerce", "media", "form", "navigation", "custom"]
+    },
+    "props": {
+      "type": "object",
+      "description": "Propiedades visuales y de configuración del componente.",
+      "additionalProperties": true
+    },
+    "styles": {
+      "type": "object",
+      "description": "Estilos visuales del componente.",
+      "additionalProperties": true,
+      "properties": {
+        "desktop": { "$ref": "#/$defs/styleBlock" },
+        "tablet": { "$ref": "#/$defs/styleBlock" },
+        "mobile": { "$ref": "#/$defs/styleBlock" }
+      }
+    },
+    "bindings": {
+      "type": "object",
+      "description": "Conexiones declarativas entre propiedades visuales y campos del contrato de Provider.",
+      "additionalProperties": {
+        "type": "string",
+        "description": "Path al campo del contrato del Provider. Ej: 'product.name', 'catalog.items'"
+      }
+    },
+    "actions": {
+      "type": "object",
+      "description": "Acciones que el componente puede invocar. La clave es el evento UI, el valor es la capability + params.",
+      "additionalProperties": {
+        "$ref": "#/$defs/action"
+      }
+    },
+    "permissions": {
+      "type": "array",
+      "description": "Capabilities mínimas requeridas por este componente. Validado contra el catálogo de capabilities del tenant.",
+      "items": {
+        "type": "string",
+        "description": "Identificador de capability. Ej: 'catalog.read', 'cart.write'."
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "children": {
+      "type": "array",
+      "description": "Componentes hijos. Define el árbol de composición.",
+      "items": {
+        "$ref": "https://fabrika.dev/schemas/component-v1"
+      }
+    },
+    "slots": {
+      "type": "object",
+      "description": "Named content areas for layout components. Keys are slot names, values are arrays of child components.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "https://fabrika.dev/schemas/component-v1"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Metadata de trazabilidad y auditoría.",
+      "additionalProperties": false,
+      "properties": {
+        "author": {
+          "type": "string",
+          "description": "ID del agente o usuario que generó el componente."
+        },
+        "source": {
+          "type": "string",
+          "enum": ["ai", "human", "import", "template"],
+          "description": "Origen del componente."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "action": {
+      "type": "object",
+      "description": "Acción autorizada invocable desde un evento del componente.",
+      "required": ["capability"],
+      "additionalProperties": false,
+      "properties": {
+        "capability": {
+          "type": "string",
+          "description": "Capability requerida. Ej: 'cart.write', 'orders.read'."
+        },
+        "params": {
+          "type": "object",
+          "description": "Parámetros estáticos o bindings a campos del provider.",
+          "additionalProperties": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "number" },
+              { "type": "boolean" }
+            ]
+          }
+        },
+        "confirm": {
+          "type": "string",
+          "description": "Mensaje de confirmación antes de ejecutar la acción. Vacío = sin confirmación."
+        },
+        "onSuccess": {
+          "type": "string",
+          "description": "Evento emitido si la acción tiene éxito. Ej: 'cart.updated'."
+        },
+        "onError": {
+          "type": "string",
+          "description": "Evento emitido si la acción falla. Ej: 'cart.error'."
+        }
+      }
+    },
+    "styleBlock": {
+      "type": "object",
+      "description": "Bloque de estilos para un breakpoint. Keys son propiedades CSS en camelCase.",
+      "additionalProperties": {
+        "type": ["string", "number"]
+      }
+    }
+  }
+}
