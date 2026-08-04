@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: fabrika_dev
       POSTGRES_DB: fabrika
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
@@ -30,7 +30,7 @@ services:
       KC_DB_USERNAME: fabrika
       KC_DB_PASSWORD: fabrika_dev
     ports:
-      - "8080:8080"
+      - "8081:8080"
     depends_on:
       postgres:
         condition: service_healthy
@@ -48,7 +48,7 @@ services:
       VAULT_DEV_ROOT_TOKEN_ID: fabrika-dev-token
       VAULT_DEV_LISTEN_ADDRESS: 0.0.0.0:8200
     ports:
-      - "8200:8200"
+      - "8201:8200"
     volumes:
       - ./vault-config.hcl:/vault/config/vault-config.hcl
     command: server -dev -config=/vault/config/vault-config.hcl

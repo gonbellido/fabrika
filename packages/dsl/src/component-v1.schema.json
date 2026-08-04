@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://fabrika.dev/schemas/component-v1",
   "title": "Component",
   "description": "Fabrika DSL — Component schema v1. Unidad atómica declarativa. Sin lógica ejecutable.",

@@ -4,6 +4,8 @@
   "private": true,
   "description": "Fabrika publishing engine — DSL → static HTML with versioning and feature flags",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",

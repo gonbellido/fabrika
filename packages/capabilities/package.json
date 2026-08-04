@@ -4,13 +4,8 @@
   "private": true,
   "description": "Fabrika capabilities — catalog, types, and authorization logic",
   "type": "module",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
-  "exports": {
-    ".": "./src/index.ts",
-    "./catalog": "./src/catalog.ts",
-    "./types": "./src/types.ts"
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",

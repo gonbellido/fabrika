@@ -4,14 +4,8 @@
   "private": true,
   "description": "Fabrika DSL — types, schemas, and validators",
   "type": "module",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
-  "exports": {
-    ".": "./src/index.ts",
-    "./schema": "./src/component-v1.schema.json",
-    "./types": "./src/types.ts",
-    "./validator": "./src/validator.ts"
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
@@ -20,7 +14,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "ajv": "^8.17.0"
+    "ajv": "^8.17.0",
+    "ajv-formats": "^3.0.1"
   },
   "devDependencies": {
     "typescript": "^5.5.0"

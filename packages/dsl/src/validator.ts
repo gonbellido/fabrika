@@ -1,8 +1,10 @@
 import Ajv, { type ValidateFunction } from "ajv";
+import addFormats from "ajv-formats";
 import type { ComponentDSL } from "./types.js";
-import componentSchema from "./component-v1.schema.json";
+import componentSchema from "./component-v1.schema.json" with { type: "json" };
 
-const ajv = new Ajv({ allErrors: true, strict: true });
+const ajv = new Ajv({ allErrors: true, allowUnionTypes: true });
+addFormats(ajv);
 
 let _validate: ValidateFunction<ComponentDSL> | null = null;
 
