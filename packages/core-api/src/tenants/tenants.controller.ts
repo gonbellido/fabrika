@@ -1,8 +1,8 @@
-import { Controller, Get, Post, Param, Body, Req } from "@nestjs/common";
-import type { Request } from "express";
-import { PrismaService } from "../common/prisma.service";
+import { Controller, Get, Post, Param, Body, Req } from '@nestjs/common';
+import type { Request } from 'express';
+import { PrismaService } from '../common/prisma.service';
 
-@Controller("tenants")
+@Controller('tenants')
 export class TenantsController {
   constructor(private readonly prisma: PrismaService) {}
 
@@ -14,8 +14,8 @@ export class TenantsController {
     return this.prisma.tenant.findMany();
   }
 
-  @Get(":id")
-  async get(@Param("id") id: string) {
+  @Get(':id')
+  async get(@Param('id') id: string) {
     return this.prisma.tenant.findUniqueOrThrow({ where: { id } });
   }
 

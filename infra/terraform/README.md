@@ -43,14 +43,14 @@ terraform apply
 
 ## Recursos creados
 
-| Recurso | Staging | Production |
-|---------|---------|------------|
-| VPC | 10.0.0.0/16, 2 AZs | 10.1.0.0/16, 3 AZs |
-| RDS | db.t4g.micro, 20GB | db.t4g.medium, multi-AZ, 20-100GB |
-| ECS | 1 task, 512 CPU, 1GB RAM | 3 tasks, 512 CPU, 1GB RAM |
-| CloudFront | 1 distribution | 1 distribution |
-| WAF | No | Rate limiting (2000 req/5min) |
-| Backups | 7 days | 30 days, deletion protection |
+| Recurso    | Staging                  | Production                        |
+| ---------- | ------------------------ | --------------------------------- |
+| VPC        | 10.0.0.0/16, 2 AZs       | 10.1.0.0/16, 3 AZs                |
+| RDS        | db.t4g.micro, 20GB       | db.t4g.medium, multi-AZ, 20-100GB |
+| ECS        | 1 task, 512 CPU, 1GB RAM | 3 tasks, 512 CPU, 1GB RAM         |
+| CloudFront | 1 distribution           | 1 distribution                    |
+| WAF        | No                       | Rate limiting (2000 req/5min)     |
+| Backups    | 7 days                   | 30 days, deletion protection      |
 
 ## Variables sensibles (Secrets Manager)
 

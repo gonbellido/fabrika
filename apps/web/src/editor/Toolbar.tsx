@@ -12,7 +12,16 @@ const states: { key: PubState; label: string; color: string }[] = [
   { key: "published", label: "Published", color: "#22c55e" },
 ];
 
-const btn: React.CSSProperties = { padding: "4px 12px", border: "1px solid #4b5563", borderRadius: 6, background: "transparent", color: "white", cursor: "pointer", fontSize: 13, fontWeight: 500 };
+const btn: React.CSSProperties = {
+  padding: "4px 12px",
+  border: "1px solid #4b5563",
+  borderRadius: 6,
+  background: "transparent",
+  color: "white",
+  cursor: "pointer",
+  fontSize: 13,
+  fontWeight: 500,
+};
 
 export function Toolbar() {
   const viewport = useEditorStore((s) => s.viewport);
@@ -53,19 +62,48 @@ export function Toolbar() {
   };
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "8px 16px", background: "#1e3a5f", color: "white" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "8px 16px",
+        background: "#1e3a5f",
+        color: "white",
+      }}
+    >
       <span style={{ fontWeight: 700, fontSize: 16 }}>Fabrika Editor</span>
       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
         {viewports.map((v) => (
-          <button key={v.key} onClick={() => setViewport(v.key)} style={{ ...btn, background: viewport === v.key ? "#3b82f6" : "transparent" }}>{v.label}</button>
+          <button
+            key={v.key}
+            onClick={() => setViewport(v.key)}
+            style={{ ...btn, background: viewport === v.key ? "#3b82f6" : "transparent" }}
+          >
+            {v.label}
+          </button>
         ))}
         <div style={{ width: 1, height: 24, background: "#4b5563", margin: "0 8px" }} />
         {states.map((s) => (
-          <button key={s.key} onClick={() => setPubState(s.key)} style={{ ...btn, background: pubState === s.key ? s.color : "transparent", color: pubState === s.key ? "white" : "#d1d5db" }}>{s.label}</button>
+          <button
+            key={s.key}
+            onClick={() => setPubState(s.key)}
+            style={{
+              ...btn,
+              background: pubState === s.key ? s.color : "transparent",
+              color: pubState === s.key ? "white" : "#d1d5db",
+            }}
+          >
+            {s.label}
+          </button>
         ))}
         <div style={{ width: 1, height: 24, background: "#4b5563", margin: "0 8px" }} />
-        <button onClick={onLoad} style={btn}>Cargar</button>
-        <button onClick={onExport} style={{ ...btn, background: "#22c55e" }}>Exportar</button>
+        <button onClick={onLoad} style={btn}>
+          Cargar
+        </button>
+        <button onClick={onExport} style={{ ...btn, background: "#22c55e" }}>
+          Exportar
+        </button>
       </div>
     </div>
   );

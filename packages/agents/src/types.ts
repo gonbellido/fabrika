@@ -20,13 +20,7 @@ export type AgentAutonomy = "autonomous" | "assisted" | "human_required";
 
 /** Estado de una tarea asignada a un agente */
 export type TaskStatus =
-  | "pending"
-  | "assigned"
-  | "in_progress"
-  | "awaiting_review"
-  | "completed"
-  | "blocked"
-  | "failed";
+  "pending" | "assigned" | "in_progress" | "awaiting_review" | "completed" | "blocked" | "failed";
 
 /** Una tarea asignable a un agente */
 export interface AgentTask {

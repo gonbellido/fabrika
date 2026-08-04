@@ -1,7 +1,7 @@
-import { Injectable } from "@nestjs/common";
-import type { NestMiddleware } from "@nestjs/common";
-import type { Request, Response, NextFunction } from "express";
-import { PrismaService } from "./prisma.service";
+import { Injectable } from '@nestjs/common';
+import type { NestMiddleware } from '@nestjs/common';
+import type { Request, Response, NextFunction } from 'express';
+import { PrismaService } from './prisma.service';
 
 // Extend Express Request to include tenant context
 declare global {
@@ -22,8 +22,7 @@ export class TenantMiddleware implements NestMiddleware {
   async use(req: Request, _res: Response, next: NextFunction) {
     // In production, extract tenant_id from JWT token (Keycloak)
     // For dev, use header X-Tenant-Id or default to demo tenant
-    const tenantId =
-      req.headers["x-tenant-id"] as string | undefined;
+    const tenantId = req.headers['x-tenant-id'] as string | undefined;
 
     if (tenantId) {
       req.tenantId = tenantId;

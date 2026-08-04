@@ -58,7 +58,9 @@ export function DslRenderer({ dsl }: { dsl: ComponentDSL }) {
             ))}
           </div>
         ))}
-      {dsl.children?.map((c, i) => <DslRenderer key={i} dsl={c} />)}
+      {dsl.children?.map((c, i) => (
+        <DslRenderer key={i} dsl={c} />
+      ))}
     </div>
   );
 }

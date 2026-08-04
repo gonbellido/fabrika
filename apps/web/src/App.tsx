@@ -27,17 +27,59 @@ export default function App() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100vh", fontFamily: "system-ui, sans-serif" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+        fontFamily: "system-ui, sans-serif",
+      }}
+    >
       <Toolbar />
       {!tree ? (
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 20, background: "#f3f4f6" }}>
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 20,
+            background: "#f3f4f6",
+          }}
+        >
           <h1 style={{ fontSize: 28, color: "#1e3a5f", margin: 0 }}>Fabrika Editor</h1>
           <p style={{ color: "#6b7280" }}>Genera un componente con IA o carga un archivo DSL</p>
           <div style={{ display: "flex", gap: 12 }}>
-            <button ref={cardBtnRef} onClick={() => handleGenerate("ProductCard")} style={{ padding: "12px 24px", background: "#1e3a5f", color: "white", border: "none", borderRadius: 8, cursor: "pointer", fontSize: 15, fontWeight: 600 }}>
+            <button
+              ref={cardBtnRef}
+              onClick={() => handleGenerate("ProductCard")}
+              style={{
+                padding: "12px 24px",
+                background: "#1e3a5f",
+                color: "white",
+                border: "none",
+                borderRadius: 8,
+                cursor: "pointer",
+                fontSize: 15,
+                fontWeight: 600,
+              }}
+            >
               Generar ProductCard
             </button>
-            <button onClick={() => handleGenerate("Section")} style={{ padding: "12px 24px", background: "#374151", color: "white", border: "none", borderRadius: 8, cursor: "pointer", fontSize: 15, fontWeight: 600 }}>
+            <button
+              onClick={() => handleGenerate("Section")}
+              style={{
+                padding: "12px 24px",
+                background: "#374151",
+                color: "white",
+                border: "none",
+                borderRadius: 8,
+                cursor: "pointer",
+                fontSize: 15,
+                fontWeight: 600,
+              }}
+            >
               Generar Section
             </button>
           </div>

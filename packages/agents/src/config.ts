@@ -32,8 +32,7 @@ export const agentConfigs = new Map<string, AgentConfig>([
       role: "architecture",
       autonomy: "assisted",
       capabilities: [],
-      systemPrompt:
-        "Propón ADRs, modelos de datos, contratos. No generes implementación.",
+      systemPrompt: "Propón ADRs, modelos de datos, contratos. No generes implementación.",
     },
   ],
   [
@@ -42,8 +41,7 @@ export const agentConfigs = new Map<string, AgentConfig>([
       role: "implementation",
       autonomy: "assisted",
       capabilities: ["catalog.read", "content.write"],
-      systemPrompt:
-        "Genera SOLO DSL validado por JSON Schema. Sin JavaScript, SQL, ni GraphQL.",
+      systemPrompt: "Genera SOLO DSL validado por JSON Schema. Sin JavaScript, SQL, ni GraphQL.",
     },
   ],
   [
@@ -52,8 +50,7 @@ export const agentConfigs = new Map<string, AgentConfig>([
       role: "testing",
       autonomy: "autonomous",
       capabilities: ["catalog.read", "content.read"],
-      systemPrompt:
-        "Crea tests unitarios, integración, E2E, visuales, responsive, accesibilidad.",
+      systemPrompt: "Crea tests unitarios, integración, E2E, visuales, responsive, accesibilidad.",
     },
   ],
   [
@@ -62,8 +59,7 @@ export const agentConfigs = new Map<string, AgentConfig>([
       role: "security",
       autonomy: "assisted",
       capabilities: [],
-      systemPrompt:
-        "Revisa amenazas, permisos, sandbox. Puede bloquear releases.",
+      systemPrompt: "Revisa amenazas, permisos, sandbox. Puede bloquear releases.",
     },
   ],
   [
@@ -72,8 +68,7 @@ export const agentConfigs = new Map<string, AgentConfig>([
       role: "release",
       autonomy: "human_required",
       capabilities: ["content.read", "site.write"],
-      systemPrompt:
-        "Prepara changelogs, migraciones, rollback. No publica sin aprobación humana.",
+      systemPrompt: "Prepara changelogs, migraciones, rollback. No publica sin aprobación humana.",
     },
   ],
   [
@@ -122,8 +117,7 @@ export const agentConfigs = new Map<string, AgentConfig>([
       role: "defender",
       autonomy: "assisted",
       capabilities: [],
-      systemPrompt:
-        "Propón restricciones, políticas de seguridad, tests adversariales.",
+      systemPrompt: "Propón restricciones, políticas de seguridad, tests adversariales.",
     },
   ],
   [

@@ -18,11 +18,29 @@ const ProductCardView: FC<{ dsl: ComponentDSL }> = ({ dsl }) => {
   const p = dsl.props ?? {};
   return (
     <div style={card}>
-      <img src={resolveBinding(b.image ?? "")} style={{ width: "100%", borderRadius: 8, aspectRatio: "4/3", objectFit: "cover" }} />
+      <img
+        src={resolveBinding(b.image ?? "")}
+        style={{ width: "100%", borderRadius: 8, aspectRatio: "4/3", objectFit: "cover" }}
+      />
       <strong>{resolveBinding(b.title ?? "")}</strong>
-      <span style={{ fontSize: 20, fontWeight: 700, color: "#1e3a5f" }}>{resolveBinding(b.price ?? "")}</span>
-      {p.showRating ? <span style={{ color: "#f59e0b" }}>{"★".repeat(4)}☆ ({resolveBinding(b.reviewCount ?? "")})</span> : null}
-      <button style={{ width: "100%", padding: 10, background: "#1e3a5f", color: "white", border: "none", borderRadius: 8 }}>
+      <span style={{ fontSize: 20, fontWeight: 700, color: "#1e3a5f" }}>
+        {resolveBinding(b.price ?? "")}
+      </span>
+      {p.showRating ? (
+        <span style={{ color: "#f59e0b" }}>
+          {"★".repeat(4)}☆ ({resolveBinding(b.reviewCount ?? "")})
+        </span>
+      ) : null}
+      <button
+        style={{
+          width: "100%",
+          padding: 10,
+          background: "#1e3a5f",
+          color: "white",
+          border: "none",
+          borderRadius: 8,
+        }}
+      >
         {String(p.buttonLabel ?? "Añadir al carrito")}
       </button>
     </div>
@@ -46,7 +64,17 @@ const ButtonView: FC<{ dsl: ComponentDSL }> = ({ dsl }) => {
   const p = dsl.props ?? {};
   const label = String(p.label ?? dsl.label ?? "Click");
   return (
-    <button style={{ padding: "12px 24px", background: p.variant === "primary" ? "#1e3a5f" : "#e5e7eb", color: p.variant === "primary" ? "white" : "#333", border: "none", borderRadius: 8, cursor: "pointer", fontWeight: 600 }}>
+    <button
+      style={{
+        padding: "12px 24px",
+        background: p.variant === "primary" ? "#1e3a5f" : "#e5e7eb",
+        color: p.variant === "primary" ? "white" : "#333",
+        border: "none",
+        borderRadius: 8,
+        cursor: "pointer",
+        fontWeight: 600,
+      }}
+    >
       {label}
     </button>
   );
@@ -54,7 +82,13 @@ const ButtonView: FC<{ dsl: ComponentDSL }> = ({ dsl }) => {
 
 const ImageView: FC<{ dsl: ComponentDSL }> = ({ dsl }) => {
   const b = dsl.bindings ?? {};
-  return <img src={b.src ?? "https://placehold.co/400x300"} alt="" style={{ width: "100%", borderRadius: 8 }} />;
+  return (
+    <img
+      src={b.src ?? "https://placehold.co/400x300"}
+      alt=""
+      style={{ width: "100%", borderRadius: 8 }}
+    />
+  );
 };
 
 export function initRenderers() {

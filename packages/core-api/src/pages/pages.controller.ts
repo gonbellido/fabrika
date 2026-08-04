@@ -7,37 +7,37 @@ import {
   Body,
   HttpException,
   HttpStatus,
-} from "@nestjs/common";
+} from '@nestjs/common';
 
-import { PrismaService } from "../common/prisma.service";
-import { validateComponent } from "@fabrika/dsl";
-import type { ComponentDSL } from "@fabrika/dsl";
-import { isCapabilityAuthorized } from "@fabrika/capabilities";
+import { PrismaService } from '../common/prisma.service';
+import { validateComponent } from '@fabrika/dsl';
+import type { ComponentDSL } from '@fabrika/dsl';
+import { isCapabilityAuthorized } from '@fabrika/capabilities';
 
-@Controller("sites/:siteId/pages")
+@Controller('sites/:siteId/pages')
 export class PagesController {
   constructor(private readonly prisma: PrismaService) {}
 
   @Get()
-  async list(@Param("siteId") siteId: string) {
+  async list(@Param('siteId') siteId: string) {
     return this.prisma.page.findMany({ where: { siteId } });
   }
 
-  @Get(":id")
-  async get(@Param("siteId") siteId: string, @Param("id") id: string) {
+  @Get(':id')
+  async get(@Param('siteId') siteId: string, @Param('id') id: string) {
     return this.prisma.page.findFirstOrThrow({ where: { id, siteId } });
   }
 
   @Post()
   async create(
-    @Param("siteId") siteId: string,
+    @Param('siteId') siteId: string,
     @Body() body: { title: string; slug: string; dsl: ComponentDSL },
   ) {
     // Validate DSL
     const validation = validateComponent(body.dsl);
     if (!validation.valid) {
       throw new HttpException(
-        { message: "DSL inválido", errors: validation.errors },
+        { message: 'DSL inválido', errors: validation.errors },
         HttpStatus.BAD_REQUEST,
       );
     }
@@ -68,16 +68,16 @@ export class PagesController {
     });
   }
 
-  @Put(":id")
+  @Put(':id')
   async update(
-    @Param("id") id: string,
+    @Param('id') id: string,
     @Body() body: { title?: string; dsl?: ComponentDSL; state?: string },
   ) {
     if (body.dsl) {
       const validation = validateComponent(body.dsl);
       if (!validation.valid) {
         throw new HttpException(
-          { message: "DSL inválido", errors: validation.errors },
+          { message: 'DSL inválido', errors: validation.errors },
           HttpStatus.BAD_REQUEST,
         );
       }
