@@ -1,0 +1,95 @@
+---
+import { fetchPages } from "../../lib/api";
+
+const DEMO_SITE_ID = "00000000-0000-0000-0000-000000000001";
+
+export async function getStaticPaths() {
+  try {
+    const pages = await fetchPages(DEMO_SITE_ID);
+    const published = pages.filter((p) => p.state === "published");
+    return published.map((page) => ({
+      params: { slug: page.slug },
+      props: { page },
+    }));
+  } catch {
+    return [];
+  }
+}
+
+const { page } = Astro.props;
+const dsl = page.dsl;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{page.title} — Fabrika</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div class="fabrika-page" data-page-id={page.id} data-version={page.version}>
+      <div data-component={dsl.type}
+        style="padding: 20px; max-width: 1200px; margin: 0 auto;"
+      >
+        <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+          <h1 style="font-size: 24px; color: #1e3a5f; margin-bottom: 4px;">
+            {dsl.label ?? page.title}
+          </h1>
+          <p style="color: #6b7280; font-size: 14px; margin-bottom: 16px;">
+            {dsl.type} · v{dsl.version} · {dsl.category ?? "custom"}
+          </p>
+
+          {dsl.bindings && Object.keys(dsl.bindings).length > 0 && (
+            <div style="margin-bottom: 16px;">
+              <h3 style="font-size: 14px; color: #374151; margin-bottom: 8px;">Datos</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px;">
+                {Object.entries(dsl.bindings).map(([key, path]) => (
+                  <div style="padding: 12px; background: #f9fafb; border-radius: 8px; border: 1px solid #e5e7eb;">
+                    <div style="font-size: 12px; color: #6b7280; font-family: monospace;">{key}</div>
+                    <div style="font-size: 14px; color: #1e3a5f; font-weight: 500;">{path}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {dsl.permissions.length > 0 && (
+            <div style="margin-bottom: 16px;">
+              <h3 style="font-size: 14px; color: #374151; margin-bottom: 8px;">Permisos</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+                {dsl.permissions.map((p) => (
+                  <span style="padding: 4px 8px; background: #dbeafe; color: #1e40af; border-radius: 4px; font-size: 12px; font-family: monospace;">
+                    {p}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {dsl.children && dsl.children.length > 0 && (
+            <div>
+              <h3 style="font-size: 14px; color: #374151; margin-bottom: 8px;">
+                Componentes hijos ({dsl.children.length})
+              </h3>
+              {dsl.children.map((child) => (
+                <div style="padding: 12px; margin-bottom: 8px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;">
+                  <strong style="font-size: 14px;">{child.type}</strong>
+                  <span style="color: #6b7280; font-size: 12px; margin-left: 8px;">{child.label}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: #9ca3af; font-size: 13px;">
+      Powered by Fabrika · Page v{page.version}
+    </footer>
+  </body>
+</html>

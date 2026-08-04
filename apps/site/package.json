@@ -1,0 +1,21 @@
+{
+  "name": "@fabrika/site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fabrika published sites — Astro SSG for DSL pages",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "typecheck": "astro check",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@fabrika/dsl": "workspace:*",
+    "@fabrika/publishing": "workspace:*",
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

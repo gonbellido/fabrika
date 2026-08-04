@@ -1,0 +1,66 @@
+---
+import { fetchPages } from "../lib/api";
+
+const DEMO_SITE_ID = "00000000-0000-0000-0000-000000000001";
+const pages = await fetchPages(DEMO_SITE_ID);
+const publishedPages = pages.filter((p) => p.state === "published");
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabrika — Published Sites</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, sans-serif; background: #f3f4f6; }
+      .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+      h1 { color: #1e3a5f; margin-bottom: 8px; }
+      .page-card {
+        background: white; border-radius: 12px; padding: 20px;
+        margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .page-card h2 { margin: 0 0 4px; font-size: 18px; }
+      .page-card .meta { font-size: 13px; color: #6b7280; }
+      .badge {
+        display: inline-block; padding: 2px 8px; border-radius: 4px;
+        font-size: 11px; font-weight: 600; text-transform: uppercase;
+      }
+      .badge-published { background: #dcfce7; color: #15803d; }
+      .badge-draft { background: #f3f4f6; color: #6b7280; }
+      .empty { text-align: center; color: #9ca3af; padding: 60px 0; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fabrika Sites</h1>
+      <p style="color: #6b7280; margin-bottom: 24px;">
+        {publishedPages.length} páginas publicadas
+      </p>
+
+      {pages.length === 0 ? (
+        <div class="empty">
+          <p>No hay páginas todavía.</p>
+          <p style="font-size: 14px; margin-top: 8px;">
+            Crea páginas en el editor y publícalas para verlas aquí.
+          </p>
+        </div>
+      ) : (
+        pages.map((page) => (
+          <div class="page-card">
+            <h2>
+              <a href={`/page/${page.slug}`} style="color: #1e3a5f; text-decoration: none;">
+                {page.title}
+              </a>
+            </h2>
+            <div class="meta">
+              <span class={`badge badge-${page.state}`}>{page.state}</span>
+              &nbsp; v{page.version} &nbsp;·&nbsp; {page.slug}
+            </div>
+          </div>
+        ))
+      )}
+    </div>
+  </body>
+</html>
