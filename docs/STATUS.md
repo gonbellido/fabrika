@@ -3,8 +3,8 @@
 > Última actualización: 2026-08-04
 
 ## Resumen
-- Commits: 6 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
-- Fase: Prototipo funcional. Siguiente: conectar IA real, benchmark práctico
+- Commits: 8 | Tablas: 0 | Páginas: 0 | Endpoints: 0 | Tests: 0
+- Fase: Arquitectura documentada. Siguiente: infraestructura base (monorepo, CI/CD, Terraform)
 - Repo: https://github.com/gonbellido/fabrika
 
 ## Documentos fundacionales
