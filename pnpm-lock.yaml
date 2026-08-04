@@ -89,6 +89,19 @@ importers:
         specifier: ^5.5.0
         version: 5.9.3
 
+  packages/publishing:
+    dependencies:
+      '@fabrika/capabilities':
+        specifier: workspace:*
+        version: link:../capabilities
+      '@fabrika/dsl':
+        specifier: workspace:*
+        version: link:../dsl
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+
 packages:
 
   '@angular-devkit/core@19.2.24':

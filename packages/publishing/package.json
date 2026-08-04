@@ -1,0 +1,22 @@
+{
+  "name": "@fabrika/publishing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fabrika publishing engine — DSL → static HTML with versioning and feature flags",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsc --watch",
+    "lint": "prettier --check .",
+    "test": "echo 'no tests yet'",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@fabrika/dsl": "workspace:*",
+    "@fabrika/capabilities": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
